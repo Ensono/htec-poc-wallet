@@ -105,9 +105,9 @@ variables:
   # TODO: Despite being available in the TF State, these are required in other steps
   # TODO: which do not inherit the state variables yet
   - name: docker_container_registry_rg_name_nonprod
-    value:
+    value: htec-exxon-nonprod-euw-core
   - name: docker_container_registry_name_nonprod
-    value:
+    value: htecexxonnonprodeuwcore
   - name: docker_container_registry_rg_name_prod
     value:
   - name: docker_container_registry_name_prod
@@ -122,9 +122,9 @@ variables:
   # TODO: Despite being available in the TF State, these are required in other steps
   # TODO: which do not inherit the state variables yet
   - name: k8s_cluster_target_nonprod
-    value:
+    value: htec-exxon-nonprod-euw-core 
   - name: k8s_cluster_identifier_nonprod
-    value:
+    value: htec-exxon-nonprod-euw-core
   - name: k8s_cluster_target_prod
     value:
   - name: k8s_cluster_identifier_prod
@@ -167,4 +167,4 @@ variables:
 
   # Azure service connection (functions)
   - name: azure_service_connection
-    value:
+    value: amido
