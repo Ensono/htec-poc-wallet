@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Amido.Stacks.Application.CQRS.Abstractions" Version="0.2.15" />
+        <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HTEC.POC.Common\HTEC.POC.Common.csproj" />
+        <ProjectReference Include="..\HTEC.POC.Domain\HTEC.POC.Domain.csproj" />
+    </ItemGroup>
+</Project>
