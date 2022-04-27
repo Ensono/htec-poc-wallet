@@ -167,4 +167,4 @@ variables:
 
   # Azure service connection (functions)
   - name: azure_service_connection
-    value: amido
+    value: amido_azurerm
