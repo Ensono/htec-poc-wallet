@@ -1,0 +1,3207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.3014460511679644" branch-rate="0.029411764705882353" lines-covered="271" lines-valid="899" branches-covered="3" branches-valid="102" complexity="183" version="0" timestamp="1639750841">
+  <sources />
+  <packages>
+    <package name="HTEC.Engagement.Application.CommandHandlers" line-rate="0" branch-rate="0" complexity="41">
+      <classes>
+        <class name="HTEC.Engagement.Application.CommandHandlers.CreateCategoryCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/CreateCategoryCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.CreateCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.CreateCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.CreatePointsCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/CreatePointsCommandHandler.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="HandleAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.CreatePointsItemCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/CreatePointsItemCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.CreatePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.CreatePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.DeleteCategoryCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/DeleteCategoryCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.DeleteCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.DeleteCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.DeletePointsCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/DeletePointsCommandHandler.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="HandleAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="27" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="38" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="27" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="38" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.DeletePointsItemCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/DeletePointsItemCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.DeletePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.DeletePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.PointsCommandHandlerBase`2" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/_PointsCommandHandlerBase.cs" line-rate="0" branch-rate="0" complexity="12">
+          <methods>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="HandleAsync" signature="()" line-rate="0" branch-rate="0" complexity="12">
+              <lines>
+                <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="34" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="39" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="53" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="54" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
+                <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="false" />
+                <line number="76" hits="0" branch="false" />
+                <line number="78" hits="0" branch="false" />
+                <line number="79" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+                <line number="82" hits="0" branch="false" />
+                <line number="83" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="88" hits="0" branch="false" />
+                <line number="89" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="34" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="38" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="39" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="53" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="54" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="57" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="78" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="82" hits="0" branch="false" />
+            <line number="83" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="88" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.UpdateCategoryCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/UpdateCategoryCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdateCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdateCategory)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.UpdatePointsCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/UpdatePointsCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdatePoints)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdatePoints)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CommandHandlers.UpdatePointsItemCommandHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.CommandHandlers/UpdatePointsItemCommandHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="HandleCommandAsync" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdatePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RaiseApplicationEvents" signature="(HTEC.Engagement.Domain.Points,HTEC.Engagement.CQRS.Commands.UpdatePointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository,Amido.Stacks.Application.CQRS.ApplicationEvents.IApplicationEventPublisher)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="HTEC.Engagement.Application.QueryHandlers" line-rate="0" branch-rate="0" complexity="22">
+      <classes>
+        <class name="HTEC.Engagement.Application.QueryHandlers.GetPointsByIdQueryHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.QueryHandlers/GetPointsByIdQueryHandler.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(HTEC.Engagement.Application.Integration.IPointsRepository)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="23" hits="0" branch="false" />
+                <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="50" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.QueryHandlers.SearchPointsQueryHandler" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Application.QueryHandlers/SearchPointsQueryHandler.cs" line-rate="0" branch-rate="0" complexity="16">
+          <methods>
+            <method name=".ctor" signature="(Amido.Stacks.Data.Documents.Abstractions.IDocumentSearch`1&lt;HTEC.Engagement.Domain.Points&gt;)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="16">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="23" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="30" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="31" hits="0" branch="false" />
+                <line number="33" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="34" hits="0" branch="false" />
+                <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="37" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="55" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="56" hits="0" branch="false" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="23" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="30" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="34" hits="0" branch="false" />
+            <line number="36" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="37" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="55" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="56" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="HTEC.Engagement.Common" line-rate="0" branch-rate="0" complexity="45">
+      <classes>
+        <class name="HTEC.Engagement.Common.Exceptions.DomainRuleViolationException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Common/Exceptions/DomainRuleViolationException.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.Guid,Amido.Stacks.Core.Exceptions.DomainExceptionBase)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,Amido.Stacks.Core.Exceptions.DomainExceptionBase)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Common.Exceptions.ExceptionCode,HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Common.Exceptions.ExceptionCodeToHttpStatusCodeConverter" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Common/Exceptions/ExceptionCodeToHttpStatusCodeConverter.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="GetHttpStatusCode" signature="(System.Int32)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="8" hits="0" branch="false" />
+                <line number="9" hits="0" branch="true" condition-coverage="0% (0/32)" />
+                <line number="12" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="0" branch="false" />
+            <line number="9" hits="0" branch="true" condition-coverage="0% (0/32)" />
+            <line number="12" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Common.Exceptions.PointsAlreadyExistsException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Common/Exceptions/PointsAlreadyExistsException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.Guid,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Common.Exceptions.ExceptionCode,HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Common.Exceptions.PointsDoesNotExistException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Common/Exceptions/PointsDoesNotExistException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.Guid,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Common.Exceptions.ExceptionCode,HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Common.Exceptions.OperationFailedException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Common/Exceptions/OperationFailedException.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(HTEC.Engagement.Common.Exceptions.ExceptionCode,HTEC.Engagement.Common.Operations.OperationCode,System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="HTEC.Engagement.CQRS" line-rate="0.6514285714285715" branch-rate="1" complexity="30">
+      <classes>
+        <class name="HTEC.Engagement.Application.CQRS.Events.CategoryCreatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/CategoryCreatedEvent.cs" line-rate="0.5789473684210527" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="27" hits="12" branch="false" />
+            <line number="29" hits="11" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="46" branch="false" />
+            <line number="35" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.CategoryDeletedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/CategoryDeletedEvent.cs" line-rate="0.5789473684210527" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="27" hits="12" branch="false" />
+            <line number="29" hits="11" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="46" branch="false" />
+            <line number="35" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.CategoryUpdatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/CategoryUpdatedEvent.cs" line-rate="0.5789473684210527" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="27" hits="12" branch="false" />
+            <line number="29" hits="11" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="46" branch="false" />
+            <line number="35" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.CosmosDbChangeFeedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/CosmosDbChangeFeedEvent.cs" line-rate="0.631578947368421" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="34" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name="EntityId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name="ETag" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.String)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="27" hits="12" branch="false" />
+            <line number="29" hits="34" branch="false" />
+            <line number="31" hits="23" branch="false" />
+            <line number="33" hits="23" branch="false" />
+            <line number="35" hits="23" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsCreatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsCreatedEvent.cs" line-rate="0.5625" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="23" branch="false" />
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="18" hits="23" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="25" hits="12" branch="false" />
+            <line number="27" hits="11" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="31" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsDeletedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsDeletedEvent.cs" line-rate="0.5625" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="23" branch="false" />
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="18" hits="23" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="25" hits="12" branch="false" />
+            <line number="27" hits="11" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="31" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsItemCreatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsItemCreatedEvent.cs" line-rate="0.5909090909090909" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="37" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsItemId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="39" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+                <line number="26" hits="23" branch="false" />
+                <line number="27" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="26" hits="23" branch="false" />
+            <line number="27" hits="23" branch="false" />
+            <line number="29" hits="12" branch="false" />
+            <line number="31" hits="11" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="35" hits="46" branch="false" />
+            <line number="37" hits="46" branch="false" />
+            <line number="39" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsItemDeletedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsItemDeletedEvent.cs" line-rate="0.5909090909090909" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="37" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsItemId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="39" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+                <line number="26" hits="23" branch="false" />
+                <line number="27" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="26" hits="23" branch="false" />
+            <line number="27" hits="23" branch="false" />
+            <line number="29" hits="12" branch="false" />
+            <line number="31" hits="11" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="35" hits="46" branch="false" />
+            <line number="37" hits="46" branch="false" />
+            <line number="39" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsItemUpdatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsItemUpdatedEvent.cs" line-rate="0.5909090909090909" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="35" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="37" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsItemId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="39" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+                <line number="24" hits="23" branch="false" />
+                <line number="25" hits="23" branch="false" />
+                <line number="26" hits="23" branch="false" />
+                <line number="27" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="24" hits="23" branch="false" />
+            <line number="25" hits="23" branch="false" />
+            <line number="26" hits="23" branch="false" />
+            <line number="27" hits="23" branch="false" />
+            <line number="29" hits="12" branch="false" />
+            <line number="31" hits="11" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="35" hits="46" branch="false" />
+            <line number="37" hits="46" branch="false" />
+            <line number="39" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Application.CQRS.Events.PointsUpdatedEvent" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Events/PointsUpdatedEvent.cs" line-rate="0.5625" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="EventCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Amido.Stacks.Core.Operations.IOperationContext,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="23" branch="false" />
+                <line number="19" hits="23" branch="false" />
+                <line number="20" hits="23" branch="false" />
+                <line number="21" hits="23" branch="false" />
+                <line number="22" hits="23" branch="false" />
+                <line number="23" hits="23" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="18" hits="23" branch="false" />
+            <line number="19" hits="23" branch="false" />
+            <line number="20" hits="23" branch="false" />
+            <line number="21" hits="23" branch="false" />
+            <line number="22" hits="23" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="25" hits="12" branch="false" />
+            <line number="27" hits="11" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="31" hits="46" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.CreateCategory" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/CreateCategory.cs" line-rate="1" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="13" branch="false" />
+                <line number="18" hits="13" branch="false" />
+                <line number="19" hits="13" branch="false" />
+                <line number="20" hits="13" branch="false" />
+                <line number="21" hits="13" branch="false" />
+                <line number="22" hits="13" branch="false" />
+                <line number="23" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="26" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="26" branch="false" />
+            <line number="17" hits="13" branch="false" />
+            <line number="18" hits="13" branch="false" />
+            <line number="19" hits="13" branch="false" />
+            <line number="20" hits="13" branch="false" />
+            <line number="21" hits="13" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="23" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.CreatePoints" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/CreatePoints.cs" line-rate="0.9285714285714286" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="TenantId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="12" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Enabled" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.String,System.String,System.Boolean)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="13" branch="false" />
+                <line number="21" hits="13" branch="false" />
+                <line number="22" hits="13" branch="false" />
+                <line number="23" hits="13" branch="false" />
+                <line number="24" hits="13" branch="false" />
+                <line number="25" hits="13" branch="false" />
+                <line number="26" hits="13" branch="false" />
+                <line number="27" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="13" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="26" branch="false" />
+            <line number="14" hits="26" branch="false" />
+            <line number="16" hits="26" branch="false" />
+            <line number="18" hits="26" branch="false" />
+            <line number="20" hits="13" branch="false" />
+            <line number="21" hits="13" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="23" hits="13" branch="false" />
+            <line number="24" hits="13" branch="false" />
+            <line number="25" hits="13" branch="false" />
+            <line number="26" hits="13" branch="false" />
+            <line number="27" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.CreatePointsItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/CreatePointsItem.cs" line-rate="1" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Price" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Available" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="21" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.String,System.String,System.Double,System.Boolean)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="13" branch="false" />
+                <line number="24" hits="13" branch="false" />
+                <line number="25" hits="13" branch="false" />
+                <line number="26" hits="13" branch="false" />
+                <line number="27" hits="13" branch="false" />
+                <line number="28" hits="13" branch="false" />
+                <line number="29" hits="13" branch="false" />
+                <line number="30" hits="13" branch="false" />
+                <line number="31" hits="13" branch="false" />
+                <line number="32" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="26" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="26" branch="false" />
+            <line number="17" hits="26" branch="false" />
+            <line number="19" hits="26" branch="false" />
+            <line number="21" hits="26" branch="false" />
+            <line number="23" hits="13" branch="false" />
+            <line number="24" hits="13" branch="false" />
+            <line number="25" hits="13" branch="false" />
+            <line number="26" hits="13" branch="false" />
+            <line number="27" hits="13" branch="false" />
+            <line number="28" hits="13" branch="false" />
+            <line number="29" hits="13" branch="false" />
+            <line number="30" hits="13" branch="false" />
+            <line number="31" hits="13" branch="false" />
+            <line number="32" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.DeleteCategory" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/DeleteCategory.cs" line-rate="0.9" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="13" branch="false" />
+                <line number="16" hits="13" branch="false" />
+                <line number="17" hits="13" branch="false" />
+                <line number="18" hits="13" branch="false" />
+                <line number="19" hits="13" branch="false" />
+                <line number="20" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="13" branch="false" />
+            <line number="16" hits="13" branch="false" />
+            <line number="17" hits="13" branch="false" />
+            <line number="18" hits="13" branch="false" />
+            <line number="19" hits="13" branch="false" />
+            <line number="20" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.DeletePoints" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/DeletePoints.cs" line-rate="0.8571428571428571" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="13" branch="false" />
+                <line number="14" hits="13" branch="false" />
+                <line number="15" hits="13" branch="false" />
+                <line number="16" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="13" branch="false" />
+            <line number="14" hits="13" branch="false" />
+            <line number="15" hits="13" branch="false" />
+            <line number="16" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.DeletePointsItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/DeletePointsItem.cs" line-rate="0.9166666666666666" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsItemId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.Guid)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="13" branch="false" />
+                <line number="18" hits="13" branch="false" />
+                <line number="19" hits="13" branch="false" />
+                <line number="20" hits="13" branch="false" />
+                <line number="21" hits="13" branch="false" />
+                <line number="22" hits="13" branch="false" />
+                <line number="23" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="26" branch="false" />
+            <line number="17" hits="13" branch="false" />
+            <line number="18" hits="13" branch="false" />
+            <line number="19" hits="13" branch="false" />
+            <line number="20" hits="13" branch="false" />
+            <line number="21" hits="13" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="23" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.Models.Group" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/Models/Group.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="false" />
+            <line number="8" hits="0" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.UpdateCategory" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/UpdateCategory.cs" line-rate="0.9285714285714286" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="13" branch="false" />
+                <line number="20" hits="13" branch="false" />
+                <line number="21" hits="13" branch="false" />
+                <line number="22" hits="13" branch="false" />
+                <line number="23" hits="13" branch="false" />
+                <line number="24" hits="13" branch="false" />
+                <line number="25" hits="13" branch="false" />
+                <line number="26" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="26" branch="false" />
+            <line number="17" hits="26" branch="false" />
+            <line number="19" hits="13" branch="false" />
+            <line number="20" hits="13" branch="false" />
+            <line number="21" hits="13" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="23" hits="13" branch="false" />
+            <line number="24" hits="13" branch="false" />
+            <line number="25" hits="13" branch="false" />
+            <line number="26" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.UpdatePoints" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/UpdatePoints.cs" line-rate="0.8333333333333334" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="Enabled" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="13" branch="false" />
+            <line number="13" hits="13" branch="false" />
+            <line number="15" hits="13" branch="false" />
+            <line number="17" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Commands.UpdatePointsItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Commands/UpdatePointsItem.cs" line-rate="0.95" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="CategoryId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="PointsItemId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Price" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="21" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="Available" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.Guid,System.String,System.String,System.Double,System.Boolean)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="13" branch="false" />
+                <line number="26" hits="13" branch="false" />
+                <line number="27" hits="13" branch="false" />
+                <line number="28" hits="13" branch="false" />
+                <line number="29" hits="13" branch="false" />
+                <line number="30" hits="13" branch="false" />
+                <line number="31" hits="13" branch="false" />
+                <line number="32" hits="13" branch="false" />
+                <line number="33" hits="13" branch="false" />
+                <line number="34" hits="13" branch="false" />
+                <line number="35" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="26" branch="false" />
+            <line number="13" hits="26" branch="false" />
+            <line number="15" hits="26" branch="false" />
+            <line number="17" hits="26" branch="false" />
+            <line number="19" hits="26" branch="false" />
+            <line number="21" hits="26" branch="false" />
+            <line number="23" hits="26" branch="false" />
+            <line number="25" hits="13" branch="false" />
+            <line number="26" hits="13" branch="false" />
+            <line number="27" hits="13" branch="false" />
+            <line number="28" hits="13" branch="false" />
+            <line number="29" hits="13" branch="false" />
+            <line number="30" hits="13" branch="false" />
+            <line number="31" hits="13" branch="false" />
+            <line number="32" hits="13" branch="false" />
+            <line number="33" hits="13" branch="false" />
+            <line number="34" hits="13" branch="false" />
+            <line number="35" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.GetPointsById.Category" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/GetPointsById/Category.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Items" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.GetPointsById.GetPointsById" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/GetPointsById/GetPointsById.cs" line-rate="0.6666666666666666" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Id" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="12" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="13" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.GetPointsById.Points" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/GetPointsById/Points.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="TenantId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Categories" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Enabled" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.GetPointsById.PointsItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/GetPointsById/PointsItem.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Price" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Available" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.SearchPoints.SearchPoints" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/SearchPoints/SearchPoints.cs" line-rate="0.6428571428571429" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="OperationCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="CorrelationId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="SearchText" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="TenantId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PageSize" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PageNumber" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.Nullable`1&lt;System.Guid&gt;,System.Nullable`1&lt;System.Int32&gt;,System.Nullable`1&lt;System.Int32&gt;)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="20" hits="13" branch="false" />
+                <line number="21" hits="13" branch="false" />
+                <line number="22" hits="13" branch="false" />
+                <line number="23" hits="13" branch="false" />
+                <line number="24" hits="13" branch="false" />
+                <line number="25" hits="13" branch="false" />
+                <line number="26" hits="13" branch="false" />
+                <line number="27" hits="13" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="13" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="13" branch="false" />
+            <line number="21" hits="13" branch="false" />
+            <line number="22" hits="13" branch="false" />
+            <line number="23" hits="13" branch="false" />
+            <line number="24" hits="13" branch="false" />
+            <line number="25" hits="13" branch="false" />
+            <line number="26" hits="13" branch="false" />
+            <line number="27" hits="13" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.SearchPoints.SearchPointsResult" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/SearchPoints/SearchResult.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="PageSize" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="PageNumber" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Results" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.CQRS.Queries.SearchPoints.SearchPointsResultItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.CQRS/Queries/SearchPoints/SearchResultItem.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RestaurantId" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Enabled" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="HTEC.Engagement.Domain" line-rate="0.21608040201005024" branch-rate="0.10714285714285714" complexity="45">
+      <classes>
+        <class name="HTEC.Engagement.Domain.Entities.Category" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Entities/Category.cs" line-rate="0.2564102564102564" branch-rate="0.1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="24" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="26" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="Items" signature="()" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="29" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.String,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="AddPointsItem" signature="(HTEC.Engagement.Domain.Entities.PointsItem)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="41" hits="0" branch="false" />
+                <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RemovePointsItem" signature="(System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="50" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdatePointsItem" signature="(HTEC.Engagement.Domain.Entities.PointsItem)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPointsItem" signature="(System.Guid)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="69" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String,System.Collections.Generic.List`1&lt;HTEC.Engagement.Domain.Entities.PointsItem&gt;)" line-rate="1" branch-rate="0.5" complexity="NaN">
+              <lines>
+                <line number="12" hits="3" branch="false" />
+                <line number="13" hits="3" branch="false" />
+                <line number="14" hits="3" branch="false" />
+                <line number="15" hits="3" branch="false" />
+                <line number="16" hits="3" branch="false" />
+                <line number="17" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="18" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="3" branch="false" />
+            <line number="13" hits="3" branch="false" />
+            <line number="14" hits="3" branch="false" />
+            <line number="15" hits="3" branch="false" />
+            <line number="16" hits="3" branch="false" />
+            <line number="17" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="18" hits="3" branch="false" />
+            <line number="24" hits="6" branch="false" />
+            <line number="25" hits="6" branch="false" />
+            <line number="26" hits="6" branch="false" />
+            <line number="29" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="41" hits="0" branch="false" />
+            <line number="43" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="69" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.Entities.PointsItem" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Entities/PointsItem.cs" line-rate="1" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="17" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="19" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="21" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="Price" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="23" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="Available" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="25" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String,System.Double,System.Boolean)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="9" branch="false" />
+                <line number="9" hits="9" branch="false" />
+                <line number="10" hits="9" branch="false" />
+                <line number="11" hits="9" branch="false" />
+                <line number="12" hits="9" branch="false" />
+                <line number="13" hits="9" branch="false" />
+                <line number="14" hits="9" branch="false" />
+                <line number="15" hits="9" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="9" branch="false" />
+            <line number="9" hits="9" branch="false" />
+            <line number="10" hits="9" branch="false" />
+            <line number="11" hits="9" branch="false" />
+            <line number="12" hits="9" branch="false" />
+            <line number="13" hits="9" branch="false" />
+            <line number="14" hits="9" branch="false" />
+            <line number="15" hits="9" branch="false" />
+            <line number="17" hits="18" branch="false" />
+            <line number="19" hits="18" branch="false" />
+            <line number="21" hits="18" branch="false" />
+            <line number="23" hits="18" branch="false" />
+            <line number="25" hits="18" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.Points" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Aggregate/Points.cs" line-rate="0.273972602739726" branch-rate="0.25" complexity="NaN">
+          <methods>
+            <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="TenantId" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="29" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="Categories" signature="()" line-rate="1" branch-rate="0.5" complexity="NaN">
+              <lines>
+                <line number="34" hits="1" branch="true" condition-coverage="50% (1/2)" />
+              </lines>
+            </method>
+            <method name="Enabled" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="36" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.String,System.String,System.Boolean)" line-rate="1" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddCategory" signature="(System.Guid,System.String,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="50" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdateCategory" signature="(System.Guid,System.String,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RemoveCategory" signature="(System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="67" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="AddPointsItem" signature="(System.Guid,System.Guid,System.String,System.String,System.Double,System.Boolean)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="82" hits="0" branch="false" />
+                <line number="83" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="86" hits="0" branch="false" />
+                <line number="87" hits="0" branch="false" />
+                <line number="88" hits="0" branch="false" />
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="false" />
+                <line number="91" hits="0" branch="false" />
+                <line number="92" hits="0" branch="false" />
+                <line number="93" hits="0" branch="false" />
+                <line number="95" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdatePointsItem" signature="(System.Guid,System.Guid,System.String,System.String,System.Double,System.Boolean)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="105" hits="0" branch="false" />
+                <line number="106" hits="0" branch="false" />
+                <line number="108" hits="0" branch="false" />
+                <line number="109" hits="0" branch="false" />
+                <line number="110" hits="0" branch="false" />
+                <line number="111" hits="0" branch="false" />
+                <line number="112" hits="0" branch="false" />
+                <line number="113" hits="0" branch="false" />
+                <line number="114" hits="0" branch="false" />
+                <line number="115" hits="0" branch="false" />
+                <line number="116" hits="0" branch="false" />
+                <line number="118" hits="0" branch="false" />
+                <line number="119" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="RemovePointsItem" signature="(System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="122" hits="0" branch="false" />
+                <line number="123" hits="0" branch="false" />
+                <line number="125" hits="0" branch="false" />
+                <line number="127" hits="0" branch="false" />
+                <line number="128" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetCategory" signature="(System.Guid)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="131" hits="0" branch="false" />
+                <line number="132" hits="0" branch="false" />
+                <line number="134" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="135" hits="0" branch="false" />
+                <line number="137" hits="0" branch="false" />
+                <line number="138" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.Guid,System.String,System.Boolean,System.Collections.Generic.List`1&lt;HTEC.Engagement.Domain.Entities.Category&gt;)" line-rate="1" branch-rate="0.5" complexity="NaN">
+              <lines>
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="27" hits="4" branch="false" />
+            <line number="29" hits="2" branch="false" />
+            <line number="31" hits="4" branch="false" />
+            <line number="34" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="36" hits="4" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="50" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
+            <line number="82" hits="0" branch="false" />
+            <line number="83" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="86" hits="0" branch="false" />
+            <line number="87" hits="0" branch="false" />
+            <line number="88" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="false" />
+            <line number="91" hits="0" branch="false" />
+            <line number="92" hits="0" branch="false" />
+            <line number="93" hits="0" branch="false" />
+            <line number="95" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="105" hits="0" branch="false" />
+            <line number="106" hits="0" branch="false" />
+            <line number="108" hits="0" branch="false" />
+            <line number="109" hits="0" branch="false" />
+            <line number="110" hits="0" branch="false" />
+            <line number="111" hits="0" branch="false" />
+            <line number="112" hits="0" branch="false" />
+            <line number="113" hits="0" branch="false" />
+            <line number="114" hits="0" branch="false" />
+            <line number="115" hits="0" branch="false" />
+            <line number="116" hits="0" branch="false" />
+            <line number="118" hits="0" branch="false" />
+            <line number="119" hits="0" branch="false" />
+            <line number="122" hits="0" branch="false" />
+            <line number="123" hits="0" branch="false" />
+            <line number="125" hits="0" branch="false" />
+            <line number="127" hits="0" branch="false" />
+            <line number="128" hits="0" branch="false" />
+            <line number="131" hits="0" branch="false" />
+            <line number="132" hits="0" branch="false" />
+            <line number="134" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="135" hits="0" branch="false" />
+            <line number="137" hits="0" branch="false" />
+            <line number="138" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.PointsAggregateRoot.Exceptions.CategoryAlreadyExistsException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Exceptions/CategoryAlreadyExistsException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.String,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.PointsAggregateRoot.Exceptions.CategoryDoesNotExistException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Exceptions/CategoryDoesNotExistException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.Guid,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.PointsAggregateRoot.Exceptions.PointsItemAlreadyExistsException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Exceptions/PointsItemAlreadyExistsException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.String,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.PointsAggregateRoot.Exceptions.PointsItemDoesNotExistException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Exceptions/PointsItemDoesNotExistException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.Guid,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.Guid,System.Guid)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.PointsAggregateRoot.Exceptions.PointsItemPriceMustNotBeZeroException" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/Exceptions/PointsItemPriceMustNotBeZeroException.cs" line-rate="0" branch-rate="0" complexity="NaN">
+          <methods>
+            <method name="ExceptionCode" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.String,System.String)" line-rate="0" branch-rate="0" complexity="NaN">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Raise" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="HTEC.Engagement.Domain.ValueObjects.Group" filename="/home/vsts/work/1/s/stacks-dotnet-cqrs-events/src/api/HTEC.Engagement.Domain/PointsAggregateRoot/ValueObjects/Group.cs" line-rate="0" branch-rate="1" complexity="NaN">
+          <methods>
+            <method name="Id" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="8" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String)" line-rate="0" branch-rate="1" complexity="NaN">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

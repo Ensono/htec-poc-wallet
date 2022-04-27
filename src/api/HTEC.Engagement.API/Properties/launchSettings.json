@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "HTEC.Engagement.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "COSMOSDB_KEY": "",
+        "SERVICEBUS_CONNECTIONSTRING": ""
+      },
+      "applicationUrl": "https://localhost:54253;http://localhost:54254"
+    }
+  }
+}

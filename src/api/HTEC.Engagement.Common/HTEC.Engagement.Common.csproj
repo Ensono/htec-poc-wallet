@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Configuration\**" />
+      <EmbeddedResource Remove="Configuration\**" />
+      <None Remove="Configuration\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Amido.Stacks.Core" Version="0.2.19" />
+    </ItemGroup>
+
+</Project>

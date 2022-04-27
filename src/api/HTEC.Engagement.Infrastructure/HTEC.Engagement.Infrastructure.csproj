@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amido.Stacks.Data.Documents.CosmosDB" Version="0.2.45" />
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.EventHub" Version="0.2.6-preview-master" />
+    <PackageReference Include="Amido.Stacks.DependencyInjection" Version="0.2.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.0" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Amido.Stacks.Messaging.Azure.ServiceBus\Amido.Stacks.Messaging.Azure.ServiceBus.csproj" />
+        <ProjectReference Include="..\HTEC.Engagement.Application.CommandHandlers\HTEC.Engagement.Application.CommandHandlers.csproj" />
+        <ProjectReference Include="..\HTEC.Engagement.Application.Integration\HTEC.Engagement.Application.Integration.csproj" />
+        <ProjectReference Include="..\HTEC.Engagement.Application.QueryHandlers\HTEC.Engagement.Application.QueryHandlers.csproj" />
+        <ProjectReference Include="..\HTEC.Engagement.CQRS\HTEC.Engagement.CQRS.csproj" />
+        <ProjectReference Include="..\HTEC.Engagement.Domain\HTEC.Engagement.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
