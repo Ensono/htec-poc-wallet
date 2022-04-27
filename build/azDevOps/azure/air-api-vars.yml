@@ -56,11 +56,11 @@ variables:
   - name: region
     value: westeurope
   - name: company
-    value: HTEC
+    value: htec
   - name: project
     value: htec-poc-wallet
   - name: domain
-    value: Wallet
+    value: wallet
   - name: k8s_app_route
     value: /api/wallet
   - name: app_bus_type
