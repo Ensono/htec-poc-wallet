@@ -26,7 +26,7 @@ variables:
 
   # Tests
   - name: Test.ProviderContractTestProjectSourcePath
-    value: '$(Build.SourcesDirectory)/src/api/HTEC.POC.API.ContractTests'
+    value: '$(Build.SourcesDirectory)/src/api/HTEC.Engagement.API.ContractTests'
 
   # Docker Config
   - name: Docker.ImageTag
