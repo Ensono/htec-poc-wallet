@@ -25,16 +25,7 @@ namespace HTEC.Engagement.Common.Exceptions
 
                 //Business related
                 case Exceptions.ExceptionCode.PointsAlreadyExists:
-                case Exceptions.ExceptionCode.CategoryAlreadyExists:
-                case Exceptions.ExceptionCode.PointsItemAlreadyExists:
-                    return HttpStatusCode.Conflict;
-
                 case Exceptions.ExceptionCode.PointsDoesNotExist:
-                case Exceptions.ExceptionCode.CategoryDoesNotExist:
-                case Exceptions.ExceptionCode.PointsItemDoesNotExist:
-                    return HttpStatusCode.NotFound;
-
-                case Exceptions.ExceptionCode.PointsItemPriceMustNotBeZero:
                 default:
                     return HttpStatusCode.BadRequest;
             }

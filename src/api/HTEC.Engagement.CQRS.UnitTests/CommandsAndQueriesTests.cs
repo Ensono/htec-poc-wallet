@@ -93,7 +93,7 @@ namespace HTEC.Engagement.CQRS.UnitTests
                 .GetImplementationsOf(typeof(ICommand))
                 .Select(c => c.Item2);
 
-            var handlers = typeof(IssuePointsCommandHandler)
+            var handlers = typeof(CreatePointsCommandHandler)
                 .Assembly
                 .GetImplementationsOf(typeof(ICommandHandler<,>))
                 .Select(d => d).ToList();

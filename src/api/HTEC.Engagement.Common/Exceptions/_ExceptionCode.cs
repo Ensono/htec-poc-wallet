@@ -35,13 +35,6 @@ namespace HTEC.Engagement.Common.Exceptions
 
         PointsAlreadyExists = 10409,
         PointsDoesNotExist = 10404,
-
-        CategoryAlreadyExists = 11409,
-        CategoryDoesNotExist = 11404,
-
-        PointsItemAlreadyExists = 12409,
-        PointsItemDoesNotExist = 12404,
-        PointsItemPriceMustNotBeZero = 12500,
         PointsRedemptionGreaterThanBalanceException = 12600
     }
 }

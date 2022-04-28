@@ -187,9 +187,7 @@ namespace HTEC.Engagement.API
 
                     //Set default tags, shows on top, non defined tags appears at bottom
                     c.DocumentFilter<SwaggerDocumentTagger>(new OpenApiTag[] {
-                        new OpenApiTag { Name = "Points" },
-                        new OpenApiTag { Name = "Category" },
-                        new OpenApiTag { Name = "Item" }
+                        new OpenApiTag { Name = "Points" }
                     }, new string[] { });
 
                     //By Default, all endpoints are grouped by the controller name
