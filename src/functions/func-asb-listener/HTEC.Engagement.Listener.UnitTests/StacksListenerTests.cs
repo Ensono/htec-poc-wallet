@@ -34,16 +34,17 @@ namespace HTEC.Engagement.Listener.UnitTests
 
             stacksListener.Run(message);
 
-            msgReader.Received(1).Read<StacksCloudEvent<PointsCreatedEvent>>(message);
+            msgReader.Received(1).Read<StacksCloudEvent<PointsIssuedEvent>>(message);
         }
 
-        public PointsCreatedEvent BuildMessageBody()
+        public PointsIssuedEvent BuildMessageBody()
         {
             var id = Guid.NewGuid();
-            return new PointsCreatedEvent(new TestOperationContext(), id);
+            var points = 99;
+            return new PointsIssuedEvent(new TestOperationContext(), id, points);
         }
 
-        public Message BuildMessage(PointsCreatedEvent body)
+        public Message BuildMessage(PointsIssuedEvent body)
         {
             Guid correlationId = GetCorrelationId(body);
 

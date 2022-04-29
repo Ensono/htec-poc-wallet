@@ -1,4 +1,3 @@
-using Amido.Stacks.Messaging.Azure.ServiceBus.Configuration;
 using Amido.Stacks.Messaging.Azure.ServiceBus.Serializers;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +9,11 @@ using Serilog;
 using Serilog.Core;
 using HTEC.Engagement.Listener;
 using HTEC.Engagement.Listener.Logging;
+using HTEC.Engagement.Listener.Repository;
+using Amido.Stacks.Data.Documents.CosmosDB;
+using Amido.Stacks.Data.Documents.CosmosDB.Extensions;
+using Amido.Stacks.Configuration.Extensions;
+using Amido.Stacks.Messaging.Azure.ServiceBus.Configuration;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace HTEC.Engagement.Listener
@@ -30,12 +34,26 @@ namespace HTEC.Engagement.Listener
         {
             var configuration = LoadConfiguration(builder);
 
+            //builder.Services
+            //    .AddLogging()
+            //    .AddSecrets()
+            //    .Configure<ServiceBusConfiguration>(configuration.GetSection("ServiceBusConfiguration"))
+            //    .AddServiceBus();
+            //    .AddTransient<IApplicationEventHandler<NotifyEvent>, NotifyEventHandler>();
+
             builder.Services
                 .Configure<StacksListener>(configuration.GetSection(nameof(StacksListener)))
                 .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
                 .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
-
             builder.Services.AddTransient<IMessageReader, JsonMessageSerializer>();
+
+            // Cosmos
+            builder.Services.Configure<CosmosDbConfiguration>(configuration.GetSection("CosmosDb"));
+            builder.Services.AddCosmosDB();
+            builder.Services.AddTransient<IWalletRepository, CosmosDbWalletRepository>();
+
+            var healthChecks = builder.Services.AddHealthChecks();
+            healthChecks.AddCheck<CosmosDbDocumentStorage<Wallet>>("CosmosDB");
         }
 
         private static IConfiguration LoadConfiguration(IFunctionsHostBuilder builder)

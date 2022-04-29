@@ -4,9 +4,12 @@
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="5.2.0" />
-	<PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.2.49" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.0.1" />
+    <PackageReference Include="Amido.Stacks.Configuration" Version="0.2.20" />
+    <PackageReference Include="Amido.Stacks.Data.Documents.CosmosDB" Version="0.2.50" />
+    <PackageReference Include="Amido.Stacks.Domain" Version="0.2.15" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="5.3.0" />
+	<PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.3.11" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.0" />
 	<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	<PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
 	<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
@@ -26,8 +29,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="local.settings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 </Project>

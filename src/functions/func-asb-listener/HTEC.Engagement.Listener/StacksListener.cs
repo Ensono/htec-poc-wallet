@@ -23,7 +23,7 @@ namespace HTEC.Engagement.Listener
             "%SUBSCRIPTION_NAME%",
             Connection = "SERVICEBUS_CONNECTIONSTRING")] Message mySbMsg)
         {
-            var appEvent = msgReader.Read<StacksCloudEvent<PointsCreatedEvent>>(mySbMsg);
+            var appEvent = msgReader.Read<StacksCloudEvent<PointsIssuedEvent>>(mySbMsg);
 
             // TODO: work with appEvent
             logger.LogInformation($"Message read. Points Id: {appEvent?.Data?.PointsId}");
