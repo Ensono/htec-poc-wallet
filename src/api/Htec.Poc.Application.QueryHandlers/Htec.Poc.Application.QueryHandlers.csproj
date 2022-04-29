@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj" />
+        <ProjectReference Include="..\Htec.Poc.CQRS\Htec.Poc.CQRS.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Amido.Stacks.Data.Documents.Abstractions" Version="0.2.13" />
+    </ItemGroup>
+</Project>

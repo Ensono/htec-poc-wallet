@@ -9,7 +9,7 @@ WORKDIR /app
 
 # Copy everything else and build
 COPY ./ ./
-RUN dotnet publish -c Release -o out HTEC.Engagement.API
+RUN dotnet publish -c Release -o out Htec.Poc.API
 #list files copied to output
 RUN find
 RUN du -ch out/
@@ -19,4 +19,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 EXPOSE 80
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "HTEC.Engagement.API.dll"]
+ENTRYPOINT ["dotnet", "Htec.Poc.API.dll"]

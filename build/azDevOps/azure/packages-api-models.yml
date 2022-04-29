@@ -11,7 +11,7 @@ variables:
   - name: Version.Revision
     value: $[counter(variables['Version.MajorMinor'], 0)]
   - name: Package.Path
-    value: 'src/api/HTEC.Engagement.API.Models/'
+    value: 'src/api/Htec.Poc.API.Models/'
   - name: Package.Feed
     value: 'packages-wallet'
   - name: BuildPipeline.Path
@@ -23,7 +23,7 @@ resources:
 trigger:
   paths:
     include:
-      - src/api/HTEC.Engagement.API.Models/
+      - src/api/Htec.Poc.API.Models/
       - build/azDevOps/azure/packages-api-models.yml
     exclude:
       - '*'

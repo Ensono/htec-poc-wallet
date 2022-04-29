@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amido.Stacks.Data.Documents.CosmosDB" Version="0.2.45" />
+    <PackageReference Include="Amido.Stacks.Messaging.AWS.SQS" Version="0.2.11" />
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.2.49" />
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.EventHub" Version="0.2.6-preview-master" />
+    <PackageReference Include="Amido.Stacks.DependencyInjection" Version="0.2.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.0" />
+    <PackageReference Include="Amido.Stacks.DynamoDB" Version="0.1.25" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.15"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Htec.Poc.Application.CommandHandlers\Htec.Poc.Application.CommandHandlers.csproj" />
+    <ProjectReference Include="..\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj" />
+    <ProjectReference Include="..\Htec.Poc.Application.QueryHandlers\Htec.Poc.Application.QueryHandlers.csproj" />
+    <ProjectReference Include="..\Htec.Poc.CQRS\Htec.Poc.CQRS.csproj" />
+    <ProjectReference Include="..\Htec.Poc.Domain\Htec.Poc.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

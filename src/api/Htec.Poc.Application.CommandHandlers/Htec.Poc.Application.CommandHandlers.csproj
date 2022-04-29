@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj" />
+    <ProjectReference Include="..\Htec.Poc.Common\Htec.Poc.Common.csproj" />
+    <ProjectReference Include="..\Htec.Poc.CQRS\Htec.Poc.CQRS.csproj" />
+    <ProjectReference Include="..\Htec.Poc.Domain\Htec.Poc.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.2.49" />
+  </ItemGroup>
+</Project>
