@@ -25,6 +25,8 @@ variables:
   # Agent configuration
   - name: TaskctlVersion
     value: 1.4.2
+  - name: StacksEnvfileVersion
+    value: 0.0.16    
   - name: pool_vm_image
     value: ubuntu-20.04
 
@@ -79,10 +81,10 @@ variables:
     value: "$(self_generic_name)-listener-asb-function"
   - name: docker_image_args_asb_listener
     value: "--build-arg function=Htec.Poc.Listener src/functions/func-asb-listener"
-  - name: docker_image_name_aeh_listener
-    value: "$(self_generic_name)--listener-aeh-function"
-  - name: docker_image_args_aeh_listener
-    value: "--build-arg function=Htec.Poc.Listener src/functions/func-aeh-listener"
+  - name: docker_image_name_cosmosdb_worker
+    value: "$(self_generic_name)-listener-aeh-function"
+  - name: docker_image_args_cosmosdb_worker
+    value: "--build-arg function=Htec.Poc.Worker src/functions/func-cosmosdb-worker"
 
   # SonarQube Configuration
   # SONAR_TOKEN and SONAR_ORGANIZATION must be inherited from library groups/etc.
@@ -109,9 +111,9 @@ variables:
   - name: docker_container_registry_name_nonprod
     value: htecexxonnonprodeuwcore
   - name: docker_container_registry_rg_name_prod
-    value:
+    value: htec-exxon-prod-euw-core
   - name: docker_container_registry_name_prod
-    value:
+    value: htecexxonprodeuwcore
 
   # Kubernetes & Docker Image Settings
   - name: docker_image_tag
@@ -126,9 +128,9 @@ variables:
   - name: k8s_cluster_identifier_nonprod
     value: htec-exxon-nonprod-euw-core
   - name: k8s_cluster_target_prod
-    value:
+    value: htec-exxon-prod-euw-core
   - name: k8s_cluster_identifier_prod
-    value:
+    value: htec-exxon-prod-euw-core
 
   # Kubernetes target file location
   - name: k8s_resource_file

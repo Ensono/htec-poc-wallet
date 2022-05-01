@@ -29,6 +29,7 @@ stages:
           - template: templates/air-api-setup.yml
             parameters:
               TaskctlVersion: ${{ variables.TaskctlVersion }}
+              StacksEnvfileVersion: ${{ variables.StacksEnvfileVersion }}
 
           - task: Bash@3
             displayName: "TaskCTL: Setup"
@@ -56,7 +57,13 @@ stages:
             displayName: "TaskCTL: Build"
             inputs:
               targetType: inline
-              script: taskctl build
+              script: |
+                taskctl build:functional_tests
+                taskctl build:container:api
+                taskctl build:container:bg_worker
+                taskctl build:container:worker
+                taskctl build:container:listener_asb
+                taskctl build:container:cosmosdb_worker
             env:
               # Azure
               ARM_TENANT_ID: "$(azure-tenant-id)"
@@ -70,8 +77,8 @@ stages:
               DOCKER_IMAGE_ARGS_WORKER: $(docker_image_args_worker)
               DOCKER_IMAGE_NAME_ASB_LISTENER: $(docker_image_name_asb_listener)
               DOCKER_IMAGE_ARGS_ASB_LISTENER: $(docker_image_args_asb_listener)
-              DOCKER_IMAGE_NAME_AEH_LISTENER: $(docker_image_name_aeh_listener)
-              DOCKER_IMAGE_ARGS_AEH_LISTENER: $(docker_image_args_aeh_listener)
+              DOCKER_IMAGE_NAME_COSMOSDB_WORKER: $(docker_image_name_cosmosdb_worker)
+              DOCKER_IMAGE_ARGS_COSMOSDB_WORKER: $(docker_image_args_cosmosdb_worker)
               DOCKER_CONTAINER_REGISTRY_NAME: $(docker_container_registry_name_nonprod).azurecr.io
               REGISTRY_RESOURCE_GROUP: $(docker_container_registry_rg_name_nonprod)
 
@@ -265,7 +272,7 @@ stages:
                     condition: contains('${{ variables.app_bus_type }}', 'eventhub')
                     azureSubscription: ${{ variables.azure_service_connection}}
                     container_registry_name: $(docker_container_registry_name_nonprod)
-                    function_image_name: $(docker_image_name_aeh_listener)
+                    function_image_name: $(docker_image_name_cosmosdb_worker)
                     function_image_tag: $(docker_image_tag)
                     function_name: func-aeh-listener-lngrjm # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
                     function_resource_group: amido-stacks-dev-euw-netcore-api-cqrs-evnts # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
