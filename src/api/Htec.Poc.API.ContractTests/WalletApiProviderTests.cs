@@ -51,7 +51,7 @@ public class WalletApiProviderTests
     }
 
     //If there are additional consumers, add extra inline data with the consumer name
-    [Theory]
+    [Theory(Skip = "true")]
     [InlineData("GenericWalletConsumer")]
     //[InlineData("OtherConsumer")]
     public void EnsureProviderApiHonoursPactWithConsumer(string consumerName)
