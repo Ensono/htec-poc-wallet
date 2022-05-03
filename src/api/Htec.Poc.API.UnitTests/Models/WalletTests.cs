@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
@@ -73,19 +72,6 @@ public class WalletTests
             .First(x => x.Name == "Description")
             .Should()
             .Return<string>();
-    }
-
-    [Fact]
-    public void Categories_Should_ReturnList()
-    {
-        // Arrange
-        // Act
-        // Assert
-        typeof(Wallet)
-            .Properties()
-            .First(x => x.Name == "Categories")
-            .Should()
-            .Return<List<Category>>();
     }
 
     [Fact]

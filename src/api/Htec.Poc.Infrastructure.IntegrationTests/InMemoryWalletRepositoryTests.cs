@@ -45,7 +45,6 @@ public class InMemoryWalletRepositoryTests
         Assert.Equal(dbItem.TenantId, wallet.TenantId);
         Assert.Equal(dbItem.Description, wallet.Description);
         Assert.Equal(dbItem.Enabled, wallet.Enabled);
-        Assert.Equal(dbItem.Categories, wallet.Categories);
     }
 
     /// <summary>

@@ -23,11 +23,6 @@ public class Wallet
     public string Description { get; private set; }
 
     /// <summary>
-    /// Represents the categories contained in the wallet
-    /// </summary>
-    public List<Category> Categories { get; private set; }
-
-    /// <summary>
     /// Represents the status of the wallet. False if disabled
     /// </summary>
     [Required]
@@ -40,7 +35,6 @@ public class Wallet
             Id = wallet.Id,
             Name = wallet.Name,
             Description = wallet.Description,
-            Categories = wallet.Categories?.Select(Category.FromQuery).ToList(),
             Enabled = wallet.Enabled
         };
     }

@@ -8,7 +8,6 @@ using NSubstitute;
 using Xunit;
 using Htec.Poc.Application.Integration;
 using Htec.Poc.Domain;
-using Htec.Poc.Domain.Entities;
 using Htec.Poc.Infrastructure.Repositories;
 
 namespace Htec.Poc.Infrastructure.UnitTests;
@@ -77,7 +76,7 @@ public class CosmosDbWalletRepositoryTests
     private IDocumentStorage<Wallet> SetupFakeWalletRepository()
     {
         var walletRepository = Substitute.For<IDocumentStorage<Domain.Wallet>>();
-        wallet = new Wallet(Guid.Empty, "testName", Guid.Empty, "testDescription", true, new List<Category>());
+        wallet = new Wallet(Guid.Empty, "testName", Guid.Empty, "testDescription", true);
         var fakeTypeResponse = new OperationResult<Wallet>(true, wallet, new Dictionary<string, string>());
         var fakeNonTypeResponse = new OperationResult(true, new Dictionary<string, string>());
 

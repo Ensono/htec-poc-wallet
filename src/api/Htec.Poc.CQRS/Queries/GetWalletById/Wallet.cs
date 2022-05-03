@@ -18,9 +18,6 @@ public class Wallet
     public string Description { get; set; }
 
     [Required]
-    public List<Category> Categories { get; set; }
-
-    [Required]
     public bool? Enabled { get; set; }
 
     public static Wallet FromDomain(Domain.Wallet wallet)
@@ -31,8 +28,7 @@ public class Wallet
             TenantId = wallet.TenantId,
             Name = wallet.Name,
             Description = wallet.Description,
-            Enabled = wallet.Enabled,
-            Categories = wallet.Categories?.Select(Category.FromEntity).ToList()
+            Enabled = wallet.Enabled
         };
     }
 }

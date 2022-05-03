@@ -16,8 +16,6 @@ using Htec.Poc.Common.Exceptions;
 using Htec.Poc.CQRS.Commands;
 using Htec.Poc.CQRS.Queries.GetWalletById;
 using Htec.Poc.CQRS.Queries.SearchWallet;
-using Htec.Poc.Domain.WalletAggregateRoot.Exceptions;
-using Query = Htec.Poc.CQRS.Queries;
 
 namespace Htec.Poc.CQRS.UnitTests;
 
@@ -60,33 +58,6 @@ public class HandlerTests
         await walletRepo.Received(1).SaveAsync(Arg.Any<Domain.Wallet>());
         await eventPublisher.Received(1).PublishAsync(Arg.Any<IApplicationEvent>());
 
-        result.ShouldBeOfType<Guid>();
-    }
-
-    [Theory, AutoData]
-    public async void CreateCategoryCommandHandler_HandleAsync(Domain.Wallet wallet, CreateCategory command)
-    {
-        // Arrange
-        var handler = new CreateCategoryCommandHandler(walletRepo, eventPublisher);
-
-        // Act
-        var result = await handler.HandleCommandAsync(wallet, command);
-
-        // Assert
-        result.ShouldBeOfType<Guid>();
-    }
-
-    [Theory, AutoData]
-    public async void CreateWalletItemCommandHandler_HandleAsync(Domain.Wallet wallet, CreateWalletItem command)
-    {
-        // Arrange
-        var handler = new CreateWalletItemCommandHandler(walletRepo, eventPublisher);
-        command.CategoryId = wallet.Categories[0].Id;
-
-        // Act
-        var result = await handler.HandleCommandAsync(wallet, command);
-
-        // Assert
         result.ShouldBeOfType<Guid>();
     }
 
@@ -158,61 +129,6 @@ public class HandlerTests
         // Assert
         result.ShouldBeOfType<bool>();
         result.ShouldBe(true);
-    }
-
-    [Theory, AutoData]
-    public async void UpdateCategoryCommandHandler_HandleAsync(Domain.Wallet wallet, UpdateCategory command)
-    {
-        // Arrange
-        var handler = new UpdateCategoryCommandHandler(walletRepo, eventPublisher);
-        command.CategoryId = wallet.Categories[0].Id;
-
-        // Act
-        var result = await handler.HandleCommandAsync(wallet, command);
-
-        // Assert
-        result.ShouldBeOfType<bool>();
-        result.ShouldBe(true);
-    }
-
-    [Theory, AutoData]
-    public async void UpdateWalletItemCommandHandler_HandleAsync(Domain.Wallet wallet, UpdateWalletItem command)
-    {
-        // Arrange
-        var handler = new UpdateWalletItemCommandHandler(walletRepo, eventPublisher);
-        command.CategoryId = wallet.Categories[0].Id;
-        command.WalletItemId = wallet.Categories[0].Items[0].Id;
-
-
-        // Act
-        var result = await handler.HandleCommandAsync(wallet, command);
-
-        // Assert
-        result.ShouldBeOfType<bool>();
-        result.ShouldBe(true);
-    }
-
-    [Theory, AutoData]
-    public async void UpdateCategoryCommandHandler_HandleAsync_NoCategory_ShouldThrow(Domain.Wallet wallet, UpdateCategory command)
-    {
-        // Arrange
-        var handler = new UpdateCategoryCommandHandler(walletRepo, eventPublisher);
-
-        // Act
-        // Assert
-        await Should.ThrowAsync<CategoryDoesNotExistException>(async () => await handler.HandleCommandAsync(wallet, command));
-    }
-
-    [Theory, AutoData]
-    public async void UpdateWalletItemCommandHandler_HandleAsync_NoWalletItem_ShouldThrow(Domain.Wallet wallet, UpdateWalletItem command)
-    {
-        // Arrange
-        var handler = new UpdateWalletItemCommandHandler(walletRepo, eventPublisher);
-        command.CategoryId = wallet.Categories[0].Id;
-
-        // Act
-        // Assert
-        await Should.ThrowAsync<WalletItemDoesNotExistException>(async () => await handler.HandleCommandAsync(wallet, command));
     }
 
     #endregion

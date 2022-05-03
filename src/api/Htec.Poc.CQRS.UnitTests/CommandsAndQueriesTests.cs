@@ -93,7 +93,7 @@ public class CommandsAndQueriesTests
             .GetImplementationsOf(typeof(ICommand))
             .Select(c => c.Item2);
 
-        var handlers = typeof(CreateCategoryCommandHandler)
+        var handlers = typeof(CreateWalletCommandHandler)
             .Assembly
             .GetImplementationsOf(typeof(ICommandHandler<,>))
             .Select(d => d).ToList();

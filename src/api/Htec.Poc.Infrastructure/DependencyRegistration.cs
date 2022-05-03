@@ -41,16 +41,15 @@ public static class DependencyRegistration
     {
         services.AddSecrets();
 
-            services.Configure<Amido.Stacks.Messaging.Azure.ServiceBus.Configuration.ServiceBusConfiguration>(context.Configuration.GetSection("ServiceBusConfiguration"));
-            services.AddServiceBus();
-            services.AddTransient<IApplicationEventPublisher, Amido.Stacks.Messaging.Azure.ServiceBus.Senders.Publishers.EventPublisher>();
+        services.AddTransient<IApplicationEventPublisher, DummyEventPublisher>();
 
-            services.Configure<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbConfiguration>(context.Configuration.GetSection("CosmosDb"));
-            services.AddCosmosDB();
-            services.AddTransient<IWalletRepository, CosmosDbWalletRepository>();
+        services.Configure<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbConfiguration>(context.Configuration.GetSection("CosmosDb"));
+        services.AddCosmosDB();
+        services.AddTransient<IWalletRepository, CosmosDbWalletRepository>();
+
         var healthChecks = services.AddHealthChecks();
-            healthChecks.AddCheck<CustomHealthCheck>("Sample"); //This is a sample health check, remove if not needed, more info: https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
-            healthChecks.AddCheck<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbDocumentStorage<Wallet>>("CosmosDB");
+        healthChecks.AddCheck<CustomHealthCheck>("Sample"); //This is a sample health check, remove if not needed, more info: https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
+        healthChecks.AddCheck<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbDocumentStorage<Wallet>>("CosmosDB");
     }
 
     private static void AddCommandHandlers(IServiceCollection services)
