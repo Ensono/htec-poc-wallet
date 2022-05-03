@@ -15,7 +15,7 @@ namespace Htec.Poc.API.Controllers;
 /// </summary>
 [Consumes("application/json")]
 [Produces("application/json")]
-[ApiExplorerSettings(GroupName = "Wallet")]
+[ApiExplorerSettings(GroupName = "Wallet", IgnoreApi = true)]
 [ApiController]
 public class CreateWalletController : ApiControllerBase
 {
@@ -37,7 +37,7 @@ public class CreateWalletController : ApiControllerBase
     [HttpPost("/v1/wallet/")]
     [Authorize]
     [ProducesResponseType(typeof(ResourceCreatedResponse), 201)]
-    public async Task<IActionResult> CreateWallet([Required][FromBody]CreateWalletRequest body)
+    public async Task<IActionResult> CreateWallet([Required][FromBody] CreateWalletRequest body)
     {
         // NOTE: Please ensure the API returns the response codes annotated above
 
