@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "TOPIC_NAME": "sbt-reward-calculated-events",
+    "SUBSCRIPTION_NAME": "sbs-reward-calculated-events",
+    "SERVICEBUS_CONNECTIONSTRING": "Endpoint=sb://sb-reward-calculated-events-sv210429.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=EjYJCvDPeQcrFeXIT2RRr7C944N9Ie/8anbSe29jzig="
+  }
+}

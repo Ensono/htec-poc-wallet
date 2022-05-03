@@ -23,10 +23,13 @@ public class StacksListener
         "%SUBSCRIPTION_NAME%",
         Connection = "SERVICEBUS_CONNECTIONSTRING")] Message mySbMsg)
     {
-        var appEvent = msgReader.Read<StacksCloudEvent<WalletCreatedEvent>>(mySbMsg);
+        var appEvent = msgReader.Read<StacksCloudEvent<RewardCalculatedEvent>>(mySbMsg);
 
         // TODO: work with appEvent
-        logger.LogInformation($"Message read. Wallet Id: {appEvent?.Data?.WalletId}");
+        logger.LogInformation($"Message read. CorrelationId: {appEvent?.Data?.CorrelationId}");
+        logger.LogInformation($"Message read. EventCode: {appEvent?.Data?.EventCode}");
+        logger.LogInformation($"Message read. MemberId: {appEvent?.Data?.MemberId}");
+        logger.LogInformation($"Message read. Points: {appEvent?.Data?.Points}");
 
         logger.LogInformation($"C# ServiceBus topic trigger function processed message: {appEvent}");
     }

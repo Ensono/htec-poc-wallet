@@ -34,16 +34,17 @@ public class StacksListenerTests
 
         stacksListener.Run(message);
 
-        msgReader.Received(1).Read<StacksCloudEvent<WalletCreatedEvent>>(message);
+        msgReader.Received(1).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
     }
 
-    public WalletCreatedEvent BuildMessageBody()
+    public RewardCalculatedEvent BuildMessageBody()
     {
-        var id = Guid.NewGuid();
-        return new WalletCreatedEvent(new TestOperationContext(), id);
+        var memberId = Guid.NewGuid();
+        var points = 99;
+        return new RewardCalculatedEvent(new TestOperationContext(), memberId, points);
     }
 
-    public Message BuildMessage(WalletCreatedEvent body)
+    public Message BuildMessage(RewardCalculatedEvent body)
     {
         Guid correlationId = GetCorrelationId(body);
 

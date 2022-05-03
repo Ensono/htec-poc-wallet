@@ -2,22 +2,23 @@
 {
 	public enum EventCode
 	{
-		// Wallet operations
-		WalletCreated = 101,
-		WalletUpdated = 102,
-		WalletDeleted = 103,
+        // Reward operations
+        RewardCreated = 101,
+        RewardUpdated = 102,
+        RewardDeleted = 103,
+        RewardCalculated = 104,
 
-		// Categories Operations
-		CategoryCreated = 201,
-		CategoryUpdated = 202,
-		CategoryDeleted = 203,
+        // Categories Operations
+        CategoryCreated = 201,
+        CategoryUpdated = 202,
+        CategoryDeleted = 203,
 
-		// Items Operations
-		WalletItemCreated = 301,
-		WalletItemUpdated = 302,
-		WalletItemDeleted = 303,
+        // Items Operations
+        RewardItemCreated = 301,
+        RewardItemUpdated = 302,
+        RewardItemDeleted = 303,
 
-		// CosmosDB change feed operations
-		EntityUpdated = 999
-	}
+        // CosmosDB change feed operations
+        EntityUpdated = 999
+    }
 }
