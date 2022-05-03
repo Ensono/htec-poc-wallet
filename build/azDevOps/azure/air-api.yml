@@ -265,7 +265,7 @@ stages:
                     function_image_name: $(docker_image_name_asb_listener)
                     function_image_tag: $(docker_image_tag)
                     function_name: func-asb-listener-nwhujo # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: amido-stacks-dev-euw-netcore-api-cqrs-evnts # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
+                    function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
 
                 - template: templates/legacy-deploy-functions.yml
                   parameters:
@@ -275,7 +275,7 @@ stages:
                     function_image_name: $(docker_image_name_cosmosdb_worker)
                     function_image_tag: $(docker_image_tag)
                     function_name: func-aeh-listener-lngrjm # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: amido-stacks-dev-euw-netcore-api-cqrs-evnts # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
+                    function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
 
                 - template: templates/legacy-deploy-functions.yml
                   parameters:
@@ -284,7 +284,7 @@ stages:
                     function_image_name: $(docker_image_name_worker)
                     function_image_tag: $(docker_image_tag)
                     function_name: function-publisher-nwhujo # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: amido-stacks-dev-euw-netcore-api-cqrs-evnts # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
+                    function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
 
 
 
