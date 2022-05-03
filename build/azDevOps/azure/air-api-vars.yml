@@ -60,7 +60,7 @@ variables:
   - name: company
     value: htec
   - name: project
-    value: htec-poc-wallet
+    value: exxon-poc-wallet
   - name: domain
     value: wallet
   - name: k8s_app_route
