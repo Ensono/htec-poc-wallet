@@ -10,6 +10,8 @@ using Htec.Poc.Listener;
 using Amido.Stacks.Application.CQRS.ApplicationEvents;
 using Amido.Stacks.DependencyInjection;
 using Htec.Poc.Listener.Handlers;
+using Microsoft.Extensions.Logging;
+using Htec.Poc.Listener.Logging;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace Htec.Poc.Listener;
@@ -37,11 +39,10 @@ public class Startup : FunctionsStartup
             builder.Services.AddTransient(definition.interfaceVariation, definition.implementation);
         }
 
-        // IGNORE LOGGING ERROR.
-        //builder.Services
-        //    .Configure<StacksListener>(configuration.GetSection(nameof(StacksListener)))
-        //    .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
-        //    .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
+        builder.Services
+            .Configure<StacksListener>(configuration.GetSection(nameof(StacksListener)))
+            .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
+            .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
 
         //builder.Services.AddTransient<IMessageReader, JsonMessageSerializer>();
         builder.Services.AddTransient<IMessageReader, CloudEventMessageSerializer>();
