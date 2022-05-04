@@ -2,13 +2,14 @@ using Amido.Stacks.Messaging.Azure.ServiceBus.Serializers;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Serilog;
 using Serilog.Core;
 using Htec.Poc.Listener;
-using Htec.Poc.Listener.Logging;
+using Amido.Stacks.Application.CQRS.ApplicationEvents;
+using Amido.Stacks.DependencyInjection;
+using Htec.Poc.Listener.Handlers;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace Htec.Poc.Listener;
@@ -29,12 +30,21 @@ public class Startup : FunctionsStartup
     {
         var configuration = LoadConfiguration(builder);
 
-        builder.Services
-            .Configure<StacksListener>(configuration.GetSection(nameof(StacksListener)))
-            .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
-            .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
+        // Register all handlers dynamically
+        var definitions = typeof(UpdatePointsBalanceEventHandler).Assembly.GetImplementationsOf(typeof(IApplicationEventHandler<>));
+        foreach (var definition in definitions)
+        {
+            builder.Services.AddTransient(definition.interfaceVariation, definition.implementation);
+        }
 
-        builder.Services.AddTransient<IMessageReader, JsonMessageSerializer>();
+        // IGNORE LOGGING ERROR.
+        //builder.Services
+        //    .Configure<StacksListener>(configuration.GetSection(nameof(StacksListener)))
+        //    .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
+        //    .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
+
+        //builder.Services.AddTransient<IMessageReader, JsonMessageSerializer>();
+        builder.Services.AddTransient<IMessageReader, CloudEventMessageSerializer>();
     }
 
     private static IConfiguration LoadConfiguration(IFunctionsHostBuilder builder)

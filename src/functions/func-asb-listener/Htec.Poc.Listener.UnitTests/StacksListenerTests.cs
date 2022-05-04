@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using NSubstitute;
 using Xunit;
 using Htec.Poc.Application.CQRS.Events;
+using Amido.Stacks.Application.CQRS.ApplicationEvents;
 
 namespace Htec.Poc.Listener.UnitTests;
 
@@ -17,11 +18,13 @@ public class StacksListenerTests
 {
     private readonly IMessageReader msgReader;
     private readonly ILogger<StacksListener> logger;
+    private readonly IApplicationEventHandler<RewardCalculatedEvent> applicationEventHandler;
 
     public StacksListenerTests()
     {
         msgReader = Substitute.For<IMessageReader>();
         logger = Substitute.For<ILogger<StacksListener>>();
+        applicationEventHandler = Substitute.For<IApplicationEventHandler<RewardCalculatedEvent>>();
     }
 
     [Fact]
@@ -30,7 +33,7 @@ public class StacksListenerTests
         var msgBody = BuildMessageBody();
         var message = BuildMessage(msgBody);
 
-        var stacksListener = new StacksListener(msgReader, logger);
+        var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
 
         stacksListener.Run(message);
 
