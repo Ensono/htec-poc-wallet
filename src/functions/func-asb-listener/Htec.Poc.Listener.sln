@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Listener", "Htec.Poc.Listener\Htec.Poc.Listener.csproj", "{C02E845F-6033-4E04-A4AE-3123E18CCD77}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Listener.UnitTests
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{52AF9EDD-C4D9-4153-9B9C-88531667E386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Htec.Poc.Application.CQRS.Events", "Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj", "{374DA101-5C6A-46CF-9C8F-04719403EEB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Application.CQRS.Events", "Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj", "{374DA101-5C6A-46CF-9C8F-04719403EEB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amido.Stacks.Messaging.Azure.ServiceBus", "..\..\..\..\..\stacks\stacks-dotnet-packages-messaging-asb\src\Amido.Stacks.Messaging.Azure.ServiceBus\Amido.Stacks.Messaging.Azure.ServiceBus.csproj", "{CEE59B92-3D61-4682-9B3F-8D3E357AA99F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +31,17 @@ Global
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE59B92-3D61-4682-9B3F-8D3E357AA99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE59B92-3D61-4682-9B3F-8D3E357AA99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE59B92-3D61-4682-9B3F-8D3E357AA99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE59B92-3D61-4682-9B3F-8D3E357AA99F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
+		{CEE59B92-3D61-4682-9B3F-8D3E357AA99F} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3546202A-0894-4AB2-BE97-62375FDA3AD9}

@@ -44,7 +44,6 @@ public class Startup : FunctionsStartup
             .AddLogging(l => { l.AddSerilog(CreateLogger(configuration)); })
             .AddTransient(typeof(ILogger<>), typeof(LogAdapter<>));
 
-        //builder.Services.AddTransient<IMessageReader, JsonMessageSerializer>();
         builder.Services.AddTransient<IMessageReader, CloudEventMessageSerializer>();
     }
 

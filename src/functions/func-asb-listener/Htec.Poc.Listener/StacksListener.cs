@@ -32,11 +32,11 @@ public class StacksListener
         Connection = "SERVICEBUS_CONNECTIONSTRING")] Message mySbMsg)
     {
         var applicationEvent = msgReader.Read<StacksCloudEvent<RewardCalculatedEvent>>(mySbMsg);
-        //logger.LogInformation($"Message read. CorrelationId: {applicationEvent?.Data?.CorrelationId}");
-        //logger.LogInformation($"Message read. EventCode: {applicationEvent?.Data?.EventCode}");
-        //logger.LogInformation($"Message read. MemberId: {applicationEvent?.Data?.MemberId}");
-        //logger.LogInformation($"Message read. Points: {applicationEvent?.Data?.Points}");
-        //logger.LogInformation($"C# ServiceBus topic trigger function processed message: {applicationEvent}");
+        logger.LogInformation($"Message read. CorrelationId: {applicationEvent?.Data?.CorrelationId}");
+        logger.LogInformation($"Message read. EventCode: {applicationEvent?.Data?.EventCode}");
+        logger.LogInformation($"Message read. MemberId: {applicationEvent?.Data?.MemberId}");
+        logger.LogInformation($"Message read. Points: {applicationEvent?.Data?.Points}");
+        logger.LogInformation($"C# ServiceBus topic trigger function processed message: {applicationEvent}");
 
         await applicationEventHandler.HandleAsync(new RewardCalculatedEvent(
             105,
