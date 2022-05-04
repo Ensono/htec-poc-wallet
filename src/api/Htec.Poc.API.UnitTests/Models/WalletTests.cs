@@ -62,16 +62,29 @@ public class WalletTests
     }
 
     [Fact]
-    public void Description_Should_ReturnString()
+    public void Points_Should_ReturnInteger()
     {
         // Arrange
         // Act
         // Assert
         typeof(Wallet)
             .Properties()
-            .First(x => x.Name == "Description")
+            .First(x => x.Name == "Points")
             .Should()
-            .Return<string>();
+            .Return<int>();
+    }
+
+    [Fact]
+    public void Points_Should_BeDecoratedWith_RequiredAttribute()
+    {
+        // Arrange
+        // Act
+        // Assert
+        typeof(Wallet)
+            .Properties()
+            .First(x => x.Name == "Points")
+            .Should()
+            .BeDecoratedWith<RequiredAttribute>();
     }
 
     [Fact]

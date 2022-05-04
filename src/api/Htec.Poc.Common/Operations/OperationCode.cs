@@ -7,5 +7,6 @@ public enum OperationCode
     UpdateWallet = 102,
     DeleteWallet = 103,
     GetWalletById = 104,
+    GetWalletByMemberId = 105,
     SearchWallet = 110
 }

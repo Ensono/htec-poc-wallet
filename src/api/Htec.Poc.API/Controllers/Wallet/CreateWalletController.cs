@@ -44,10 +44,9 @@ public class CreateWalletController : ApiControllerBase
         var id = await commandHandler.HandleAsync(
             new CreateWallet(
                 correlationId: GetCorrelationId(),
-                tenantId: body.TenantId, //Should check if user logged-in owns it
                 name: body.Name,
-                description: body.Description,
-                enabled: body.Enabled
+                enabled: body.Enabled,
+                points: body.Points
             )
         );
 

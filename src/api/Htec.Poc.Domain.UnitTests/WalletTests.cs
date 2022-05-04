@@ -12,33 +12,33 @@ public class WalletTests
     [Theory, AutoData]
     public void Constructor(
         string name,
-        string description,
-        bool enabled)
+        bool enabled,
+        int points)
     {
         // Arrange
         // Act
-        var wallet = new Wallet(Guid.Empty, name, Guid.Empty, description, enabled);
+        var wallet = new Wallet(Guid.Empty, name, enabled, points);
 
         // Assert
         wallet.Name.Should().Be(name);
-        wallet.Description.Should().Be(description);
         wallet.Enabled.Should().Be(enabled);
+        wallet.Points.Should().Be(points);
     }
     
     [Theory, AutoData]
     public void Update(
         Wallet wallet,
         string name,
-        string description,
-        bool enabled)
+        bool enabled,
+        int points)
     {
         // Arrange
         // Act
-        wallet.Update(name, description, enabled);
+        wallet.Update(name, enabled, points);
 
         // Assert
         wallet.Name.Should().Be(name);
-        wallet.Description.Should().Be(description);
         wallet.Enabled.Should().Be(enabled);
+        wallet.Points.Should().Be(points);
     }    
 }

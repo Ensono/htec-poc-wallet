@@ -124,7 +124,7 @@ public class CreateWalletControllerTests
         var body = new CreateWalletRequest
         {
             Name = "testName",
-            Description = "testDescription"
+            Points = 9
         };
 
         var httpContext = new DefaultHttpContext();

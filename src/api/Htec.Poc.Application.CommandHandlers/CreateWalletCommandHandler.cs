@@ -27,9 +27,8 @@ public class CreateWalletCommandHandler : ICommandHandler<CreateWallet, Guid>
         var newWallet = new Wallet(
             id: id,
             name: command.Name,
-            tenantId: command.TenantId,
-            description: command.Description,
-            enabled: command.Enabled
+            enabled: command.Enabled,
+            points: command.Points
         );
 
         await repository.SaveAsync(newWallet);

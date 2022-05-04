@@ -6,28 +6,32 @@ namespace Htec.Poc.Domain;
 
 public class Wallet : AggregateRoot<Guid>
 {
-    public Wallet(Guid id, string name, Guid tenantId, string description, bool enabled)
+    public Wallet(Guid id, string name, bool enabled, int points)
     {
         Id = id;
         Name = name;
-        TenantId = tenantId;
-        Description = description;
         Enabled = enabled;
+        Points = points;
     }
 
     public string Name { get; private set; }
 
-    public Guid TenantId { get; private set; }
-
-    public string Description { get; private set; }
-
     public bool Enabled { get; private set; }
 
-    public void Update(string name, string description, bool enabled)
+    public int Points { get; private set; }
+
+    public void Update(string name, bool enabled, int points)
     {
         this.Name = name;
-        this.Description = description;
         this.Enabled = enabled;
+        this.Points = points;
+
+        Emit(new WalletChanged());
+    }
+
+    public void UpdatePointsBalance(int points)
+    {
+        this.Points += points;
 
         Emit(new WalletChanged());
     }

@@ -46,8 +46,8 @@ public class UpdateWalletController : ApiControllerBase
             {
                 WalletId = id,
                 Name = body.Name,
-                Description = body.Description,
-                Enabled = body.Enabled
+                Enabled = body.Enabled,
+                Points = body.Points
             });
 
         return StatusCode(204);

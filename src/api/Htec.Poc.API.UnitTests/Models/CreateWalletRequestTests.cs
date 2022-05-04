@@ -36,42 +36,16 @@ public class CreateWalletRequestTests
     }
 
     [Fact]
-    public void Description_Should_ReturnString()
+    public void Points_Should_ReturnInteger()
     {
         // Arrange
         // Act
         // Assert
         typeof(CreateWalletRequest)
             .Properties()
-            .First(x => x.Name == "Description")
+            .First(x => x.Name == "Points")
             .Should()
-            .Return<string>();
-    }
-
-    [Fact]
-    public void TenantId_Should_BeDecoratedWith_RequiredAttribute()
-    {
-        // Arrange
-        // Act
-        // Assert
-        typeof(CreateWalletRequest)
-            .Properties()
-            .First(x => x.Name == "TenantId")
-            .Should()
-            .BeDecoratedWith<RequiredAttribute>();
-    }
-
-    [Fact]
-    public void TenantId_Should_ReturnGuid()
-    {
-        // Arrange
-        // Act
-        // Assert
-        typeof(CreateWalletRequest)
-            .Properties()
-            .First(x => x.Name == "TenantId")
-            .Should()
-            .Return<Guid>();
+            .Return<int>();
     }
 
     [Fact]

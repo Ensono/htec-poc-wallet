@@ -9,20 +9,17 @@ public class CreateWallet : ICommand
 
     public Guid CorrelationId { get; }
 
-    public Guid TenantId { get; set; }
-
     public string Name { get; set; }
-
-    public string Description { get; set; }
 
     public bool Enabled { get; set; }
 
-    public CreateWallet(Guid correlationId, Guid tenantId, string name, string description, bool enabled)
+    public int Points { get; set; }
+
+    public CreateWallet(Guid correlationId, string name, bool enabled, int points)
     {
         CorrelationId = correlationId;
-        TenantId = tenantId;
         Name = name;
-        Description = description;
         Enabled = enabled;
+        Points = points;
     }
 }

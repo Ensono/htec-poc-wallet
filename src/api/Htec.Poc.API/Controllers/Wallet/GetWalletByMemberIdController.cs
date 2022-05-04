@@ -18,9 +18,11 @@ namespace Htec.Poc.API.Controllers;
 [ApiController]
 public class GetWalletByMemberIdController : ApiControllerBase
 {
-    public GetWalletByMemberIdController()
+    readonly IQueryHandler<Query.GetWalletByMemberId, Query.Wallet> queryHandler;
+
+    public GetWalletByMemberIdController(IQueryHandler<Query.GetWalletByMemberId, Query.Wallet> queryHandler)
     {
-        
+        this.queryHandler = queryHandler ?? throw new ArgumentNullException(nameof(queryHandler));
     }
 
     /// <summary>
@@ -36,6 +38,13 @@ public class GetWalletByMemberIdController : ApiControllerBase
     [ProducesResponseType(typeof(Wallet), 200)]
     public async Task<IActionResult> GetWalletByMemberId([FromRoute][Required] Guid memberId)
     {
-        return new ObjectResult(new Wallet());
+        var result = await queryHandler.ExecuteAsync(new Query.GetWalletByMemberId() { MemberId = memberId });
+
+        if (result == null)
+            return NotFound();
+
+        var wallet = Wallet.FromQuery(result);
+
+        return new ObjectResult(wallet);
     }
 }

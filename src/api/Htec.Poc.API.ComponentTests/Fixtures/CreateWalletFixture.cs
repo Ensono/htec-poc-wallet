@@ -48,7 +48,6 @@ public class CreateWalletFixture : ApiClientFixture
     internal void GivenAInvalidWallet()
     {
         newWallet.Name = null;
-        newWallet.Description = null;
     }
 
 

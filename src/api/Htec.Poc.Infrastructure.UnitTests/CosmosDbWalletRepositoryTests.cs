@@ -76,7 +76,7 @@ public class CosmosDbWalletRepositoryTests
     private IDocumentStorage<Wallet> SetupFakeWalletRepository()
     {
         var walletRepository = Substitute.For<IDocumentStorage<Domain.Wallet>>();
-        wallet = new Wallet(Guid.Empty, "testName", Guid.Empty, "testDescription", true);
+        wallet = new Wallet(Guid.Empty, "testName", true, 99);
         var fakeTypeResponse = new OperationResult<Wallet>(true, wallet, new Dictionary<string, string>());
         var fakeNonTypeResponse = new OperationResult(true, new Dictionary<string, string>());
 
