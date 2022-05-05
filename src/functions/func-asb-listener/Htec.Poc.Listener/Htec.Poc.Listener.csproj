@@ -4,6 +4,7 @@
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.3.11" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="5.3.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -14,7 +15,6 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\stacks\stacks-dotnet-packages-messaging-asb\src\Amido.Stacks.Messaging.Azure.ServiceBus\Amido.Stacks.Messaging.Azure.ServiceBus.csproj" />
     <ProjectReference Include="..\Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj" />
   </ItemGroup>
 

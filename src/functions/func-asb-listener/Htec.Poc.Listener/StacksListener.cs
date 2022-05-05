@@ -6,6 +6,9 @@ using Htec.Poc.Application.CQRS.Events;
 using System;
 using Amido.Stacks.Application.CQRS.ApplicationEvents;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Text;
+using Azure.Messaging.ServiceBus;
 
 namespace Htec.Poc.Listener;
 
@@ -29,19 +32,12 @@ public class StacksListener
     public async Task Run([ServiceBusTrigger(
         "%TOPIC_NAME%",
         "%SUBSCRIPTION_NAME%",
-        Connection = "SERVICEBUS_CONNECTIONSTRING")] Message mySbMsg)
+        Connection = "SERVICEBUS_CONNECTIONSTRING")] ServiceBusReceivedMessage message)
     {
-        var applicationEvent = msgReader.Read<StacksCloudEvent<RewardCalculatedEvent>>(mySbMsg);
-        logger.LogInformation($"Message read. CorrelationId: {applicationEvent?.Data?.CorrelationId}");
-        logger.LogInformation($"Message read. EventCode: {applicationEvent?.Data?.EventCode}");
-        logger.LogInformation($"Message read. MemberId: {applicationEvent?.Data?.MemberId}");
-        logger.LogInformation($"Message read. Points: {applicationEvent?.Data?.Points}");
+        var applicationEvent = JsonConvert.DeserializeObject<StacksCloudEvent<RewardCalculatedEvent>>(Encoding.UTF8.GetString(message.Body));
+
         logger.LogInformation($"C# ServiceBus topic trigger function processed message: {applicationEvent}");
 
-        await applicationEventHandler.HandleAsync(new RewardCalculatedEvent(
-            105,
-            Guid.NewGuid(),
-            Guid.Parse("d290f1ee-6c54-4b01-90e6-d701748f0851"),
-            99));
+        await applicationEventHandler.HandleAsync(applicationEvent?.Data);
     }
 }
