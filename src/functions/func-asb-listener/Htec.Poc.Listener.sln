@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{52AF9E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Application.CQRS.Events", "Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj", "{374DA101-5C6A-46CF-9C8F-04719403EEB7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Domain", "..\..\api\Htec.Poc.Domain\Htec.Poc.Domain.csproj", "{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Application.Integration", "..\..\api\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj", "{6A4DCC39-848B-4A53-9D3B-3E4F5B364007}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Infrastructure", "..\..\api\Htec.Poc.Infrastructure\Htec.Poc.Infrastructure.csproj", "{43682594-EC28-4577-92DF-47A98A4B687B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +35,27 @@ Global
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43682594-EC28-4577-92DF-47A98A4B687B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43682594-EC28-4577-92DF-47A98A4B687B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43682594-EC28-4577-92DF-47A98A4B687B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43682594-EC28-4577-92DF-47A98A4B687B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{374DA101-5C6A-46CF-9C8F-04719403EEB7} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
+		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
+		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
+		{43682594-EC28-4577-92DF-47A98A4B687B} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3546202A-0894-4AB2-BE97-62375FDA3AD9}

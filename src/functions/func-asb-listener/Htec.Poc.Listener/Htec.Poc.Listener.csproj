@@ -4,6 +4,8 @@
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Amido.Stacks.Configuration" Version="0.2.20" />
+    <PackageReference Include="Amido.Stacks.Data.Documents.CosmosDB" Version="0.2.50" />
     <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.3.11" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="5.3.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.0" />
@@ -15,6 +17,9 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\api\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj" />
+    <ProjectReference Include="..\..\..\api\Htec.Poc.Domain\Htec.Poc.Domain.csproj" />
+    <ProjectReference Include="..\..\..\api\Htec.Poc.Infrastructure\Htec.Poc.Infrastructure.csproj" />
     <ProjectReference Include="..\Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj" />
   </ItemGroup>
 

@@ -7,9 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Amido.Stacks.Data.Documents.CosmosDB" Version="0.2.50" />
-    <PackageReference Include="Amido.Stacks.Messaging.AWS.SQS" Version="0.2.20" />
     <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.3.11" />
-    <PackageReference Include="Amido.Stacks.Messaging.Azure.EventHub" Version="0.2.6-preview-master" />
     <PackageReference Include="Amido.Stacks.DependencyInjection" Version="0.2.19" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
@@ -18,7 +16,7 @@
     <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.4" />
     <PackageReference Include="Amido.Stacks.DynamoDB" Version="0.1.25" />
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.29" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.30" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,5 +1,4 @@
 ﻿using Amido.Stacks.Messaging.Azure.ServiceBus.Serializers;
-using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Htec.Poc.Application.CQRS.Events;
