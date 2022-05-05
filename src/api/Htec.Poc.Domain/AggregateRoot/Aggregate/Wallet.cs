@@ -6,12 +6,13 @@ namespace Htec.Poc.Domain;
 
 public class Wallet : AggregateRoot<Guid>
 {
-    public Wallet(Guid id, string name, bool enabled, int points)
+    public Wallet(Guid id, string name, bool enabled, int points, Guid memberId)
     {
         Id = id;
         Name = name;
         Enabled = enabled;
         Points = points;
+        MemberId = memberId;
     }
 
     public string Name { get; private set; }
@@ -19,6 +20,8 @@ public class Wallet : AggregateRoot<Guid>
     public bool Enabled { get; private set; }
 
     public int Points { get; private set; }
+
+    public Guid MemberId { get; private set; }
 
     public void Update(string name, bool enabled, int points)
     {

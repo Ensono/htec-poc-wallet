@@ -15,7 +15,10 @@ public class Wallet
     public bool? Enabled { get; set; }
 
     [Required]
-    public int Points { get; set; } 
+    public int Points { get; set; }
+
+    [Required]
+    public Guid MemberId { get; set; }
 
     public static Wallet FromDomain(Domain.Wallet wallet)
     {
@@ -25,6 +28,7 @@ public class Wallet
             Name = wallet.Name,
             Enabled = wallet.Enabled,
             Points = wallet.Points,
+            MemberId = wallet.MemberId
         };
     }
 }

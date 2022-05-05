@@ -23,4 +23,10 @@ public class CreateWalletRequest
     /// </summary>
     [Required]
     public int Points { get; set; }
+
+    /// <summary>
+    /// Represents the member id.
+    /// </summary>
+    [Required]
+    public Guid MemberId { get; set; }
 }

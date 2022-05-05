@@ -15,11 +15,14 @@ public class CreateWallet : ICommand
 
     public int Points { get; set; }
 
-    public CreateWallet(Guid correlationId, string name, bool enabled, int points)
+    public Guid MemberId { get; set; }
+
+    public CreateWallet(Guid correlationId, string name, bool enabled, int points, Guid memberId)
     {
         CorrelationId = correlationId;
         Name = name;
         Enabled = enabled;
         Points = points;
+        MemberId = memberId;
     }
 }

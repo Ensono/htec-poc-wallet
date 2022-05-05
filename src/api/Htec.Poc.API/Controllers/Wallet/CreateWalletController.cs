@@ -46,14 +46,15 @@ public class CreateWalletController : ApiControllerBase
                 correlationId: GetCorrelationId(),
                 name: body.Name,
                 enabled: body.Enabled,
-                points: body.Points
+                points: body.Points,
+                memberId: body.MemberId
             )
         );
 
         return new CreatedAtActionResult(
             "GetWallet", "GetWalletById", new
             {
-                id = id
+                id
             }, new ResourceCreatedResponse(id)
         );
     }

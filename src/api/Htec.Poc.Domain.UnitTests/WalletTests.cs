@@ -13,11 +13,12 @@ public class WalletTests
     public void Constructor(
         string name,
         bool enabled,
-        int points)
+        int points,
+        Guid memberId)
     {
         // Arrange
         // Act
-        var wallet = new Wallet(Guid.Empty, name, enabled, points);
+        var wallet = new Wallet(Guid.Empty, name, enabled, points, memberId);
 
         // Assert
         wallet.Name.Should().Be(name);

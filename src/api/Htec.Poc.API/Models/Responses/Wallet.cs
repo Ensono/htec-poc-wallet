@@ -26,6 +26,8 @@ public class Wallet
     [Required]
     public int Points {  get; private set; }
 
+    public Guid MemberId { get; private set; }
+
     public static Wallet FromQuery(Query.Wallet wallet)
     {
         return new Wallet
@@ -33,7 +35,8 @@ public class Wallet
             Id = wallet.Id,
             Name = wallet.Name,
             Enabled = wallet.Enabled,
-            Points = wallet.Points
+            Points = wallet.Points,
+            MemberId = wallet.MemberId
         };
     }
 }
