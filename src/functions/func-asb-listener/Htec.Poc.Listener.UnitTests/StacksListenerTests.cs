@@ -28,18 +28,23 @@ public class StacksListenerTests
         applicationEventHandler = Substitute.For<IApplicationEventHandler<RewardCalculatedEvent>>();
     }
 
-    //[Fact]
-    //public void TestExecution()
-    //{
-    //    var msgBody = BuildMessageBody();
-    //    var message = BuildMessage(msgBody);
+    [Fact]
+    public void TestExecution()
+    {
+        var msgBody = BuildMessageBody();
+        var message = BuildMessage(msgBody);
 
-    //    var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
+        var payloadJson = "";
+        var serviceBusReceivedMessage = ServiceBusModelFactory.ServiceBusReceivedMessage(
+            body: BinaryData.FromString(payloadJson),
+            deliveryCount: 3);
 
-    //    stacksListener.Run(message);
+        var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
 
-    //    msgReader.Received(1).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
-    //}
+        _ = stacksListener.Run(serviceBusReceivedMessage);
+
+        msgReader.Received(0).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
+    }
 
     public RewardCalculatedEvent BuildMessageBody()
     {
