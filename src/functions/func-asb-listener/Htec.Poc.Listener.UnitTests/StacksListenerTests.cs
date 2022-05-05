@@ -28,23 +28,23 @@ public class StacksListenerTests
         applicationEventHandler = Substitute.For<IApplicationEventHandler<RewardCalculatedEvent>>();
     }
 
-    //[Fact]
-    //public void TestExecution()
-    //{
-    //    var msgBody = BuildMessageBody();
-    //    var message = BuildMessage(msgBody);
+    [Fact]
+    public void TestExecution()
+    {
+        var msgBody = BuildMessageBody();
+        var message = BuildMessage(msgBody);
 
-    //    var payloadJson = System.Text.Json.JsonSerializer.Serialize(msgBody);
-    //    var serviceBusReceivedMessage = ServiceBusModelFactory.ServiceBusReceivedMessage(
-    //        body: BinaryData.FromString(payloadJson),
-    //        deliveryCount: 3);
+        var payloadJson = System.Text.Json.JsonSerializer.Serialize(msgBody);
+        var serviceBusReceivedMessage = ServiceBusModelFactory.ServiceBusReceivedMessage(
+            body: BinaryData.FromString(payloadJson),
+            deliveryCount: 3);
 
-    //    var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
+        var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
 
-    //    _ = stacksListener.Run(serviceBusReceivedMessage);
+        _ = stacksListener.Run(serviceBusReceivedMessage);
 
-    //    msgReader.Received(0).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
-    //}
+        msgReader.Received(0).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
+    }
 
     public RewardCalculatedEvent BuildMessageBody()
     {
