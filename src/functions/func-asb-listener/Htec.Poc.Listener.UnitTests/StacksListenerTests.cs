@@ -34,7 +34,7 @@ public class StacksListenerTests
         var msgBody = BuildMessageBody();
         var message = BuildMessage(msgBody);
 
-        var payloadJson = "";
+        var payloadJson = System.Text.Json.JsonSerializer.Serialize(msgBody);
         var serviceBusReceivedMessage = ServiceBusModelFactory.ServiceBusReceivedMessage(
             body: BinaryData.FromString(payloadJson),
             deliveryCount: 3);
