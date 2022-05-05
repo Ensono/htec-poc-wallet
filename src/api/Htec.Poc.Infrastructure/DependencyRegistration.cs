@@ -16,6 +16,7 @@ using Htec.Poc.Infrastructure.HealthChecks;
 using Amido.Stacks.DynamoDB.Extensions;
 using Amazon.DynamoDBv2;
 using Htec.Poc.Infrastructure.Repositories;
+using Amido.Stacks.Data.Documents.CosmosDB;
 
 namespace Htec.Poc.Infrastructure;
 
@@ -43,13 +44,13 @@ public static class DependencyRegistration
 
         services.AddTransient<IApplicationEventPublisher, DummyEventPublisher>();
 
-        services.Configure<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbConfiguration>(context.Configuration.GetSection("CosmosDb"));
+        services.Configure<CosmosDbConfiguration>(context.Configuration.GetSection("CosmosDb"));
         services.AddCosmosDB();
         services.AddTransient<IWalletRepository, CosmosDbWalletRepository>();
 
         var healthChecks = services.AddHealthChecks();
         healthChecks.AddCheck<CustomHealthCheck>("Sample"); //This is a sample health check, remove if not needed, more info: https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
-        healthChecks.AddCheck<Amido.Stacks.Data.Documents.CosmosDB.CosmosDbDocumentStorage<Wallet>>("CosmosDB");
+        healthChecks.AddCheck<CosmosDbDocumentStorage<Wallet>>("CosmosDB");
     }
 
     private static void AddCommandHandlers(IServiceCollection services)
