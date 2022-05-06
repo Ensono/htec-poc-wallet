@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\api\Htec.Poc.Application.Integration\Htec.Poc.Application.Integration.csproj" />
+    <ProjectReference Include="..\..\..\api\Htec.Poc.Common\Htec.Poc.Common.csproj" />
     <ProjectReference Include="..\..\..\api\Htec.Poc.Domain\Htec.Poc.Domain.csproj" />
     <ProjectReference Include="..\..\..\api\Htec.Poc.Infrastructure\Htec.Poc.Infrastructure.csproj" />
     <ProjectReference Include="..\Htec.Poc.Application.CQRS.Events\Htec.Poc.Application.CQRS.Events.csproj" />

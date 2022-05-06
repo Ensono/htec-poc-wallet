@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Application.Integr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Infrastructure", "..\..\api\Htec.Poc.Infrastructure\Htec.Poc.Infrastructure.csproj", "{43682594-EC28-4577-92DF-47A98A4B687B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Htec.Poc.Common", "..\..\api\Htec.Poc.Common\Htec.Poc.Common.csproj", "{BB245DEF-049C-4504-8F6C-3227CC82F3CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{43682594-EC28-4577-92DF-47A98A4B687B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43682594-EC28-4577-92DF-47A98A4B687B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43682594-EC28-4577-92DF-47A98A4B687B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB245DEF-049C-4504-8F6C-3227CC82F3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB245DEF-049C-4504-8F6C-3227CC82F3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB245DEF-049C-4504-8F6C-3227CC82F3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB245DEF-049C-4504-8F6C-3227CC82F3CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{8CF759DE-E76F-452E-A1FD-DE9BEB3FF073} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
 		{6A4DCC39-848B-4A53-9D3B-3E4F5B364007} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
 		{43682594-EC28-4577-92DF-47A98A4B687B} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
+		{BB245DEF-049C-4504-8F6C-3227CC82F3CE} = {52AF9EDD-C4D9-4153-9B9C-88531667E386}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3546202A-0894-4AB2-BE97-62375FDA3AD9}
