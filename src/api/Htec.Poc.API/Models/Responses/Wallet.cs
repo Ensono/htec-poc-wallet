@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using Query = Htec.Poc.CQRS.Queries.GetWalletById;
 
 namespace Htec.Poc.API.Models.Responses;
@@ -26,7 +28,10 @@ public class Wallet
     [Required]
     public int Points {  get; private set; }
 
+    [Required]
     public Guid MemberId { get; private set; }
+
+    public List<WalletHistory> History { get; private set; }
 
     public static Wallet FromQuery(Query.Wallet wallet)
     {
@@ -36,7 +41,8 @@ public class Wallet
             Name = wallet.Name,
             Enabled = wallet.Enabled,
             Points = wallet.Points,
-            MemberId = wallet.MemberId
+            MemberId = wallet.MemberId,
+            History = wallet.History?.Select(WalletHistory.FromQuery).ToList()
         };
     }
 }

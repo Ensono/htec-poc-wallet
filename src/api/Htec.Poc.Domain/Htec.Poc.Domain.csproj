@@ -15,7 +15,6 @@
 
     <ItemGroup>
       <Folder Include="Types\" />
-      <Folder Include="AggregateRoot\Entities\Converters\" />
       <Folder Include="AggregateRoot\Exceptions\" />
     </ItemGroup>
 </Project>
