@@ -13,8 +13,6 @@ using Htec.Poc.Application.QueryHandlers;
 using Htec.Poc.Domain;
 using Htec.Poc.Infrastructure.Fakes;
 using Htec.Poc.Infrastructure.HealthChecks;
-using Amido.Stacks.DynamoDB.Extensions;
-using Amazon.DynamoDBv2;
 using Htec.Poc.Infrastructure.Repositories;
 using Amido.Stacks.Data.Documents.CosmosDB;
 
