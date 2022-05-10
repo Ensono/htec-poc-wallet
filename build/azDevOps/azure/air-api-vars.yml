@@ -55,6 +55,8 @@ variables:
     value: $(company)-$(domain)
   - name: app_name
     value: $(self_generic_name)
+  - name: app_worker_name
+    value: api
   - name: region
     value: westeurope
   - name: company
