@@ -109,7 +109,7 @@ stages:
   - stage: Dev
     # TODO: Temporary condition
     dependsOn: Build
-    condition: and(succeeded(), neq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    condition: and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main'))
     variables:
       - group: amido-stacks-infra-credentials-nonprod
 
