@@ -45,6 +45,8 @@ variables:
   # App Specific Taxonomy
   - name: resource_def_name
     value: $(self_generic_name)
+  - name: resource_def_worker_name
+    value: $(resource_def_name)-bg-worker
   - name: component
     value: api
   - name: role
