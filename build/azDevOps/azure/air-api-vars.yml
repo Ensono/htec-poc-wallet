@@ -44,7 +44,7 @@ variables:
 
   # App Specific Taxonomy
   - name: resource_def_name
-    value: dotnet-api
+    value: $(self_generic_name)
   - name: component
     value: api
   - name: role
