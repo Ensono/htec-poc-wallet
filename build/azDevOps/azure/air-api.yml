@@ -109,7 +109,7 @@ stages:
   - stage: Dev
     # TODO: Temporary condition
     dependsOn: Build
-    # condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master')),eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    condition: and(succeeded(), neq(variables['Build.SourceBranch'], 'refs/heads/main'))
     variables:
       - group: amido-stacks-infra-credentials-nonprod
 
@@ -291,7 +291,7 @@ stages:
 
   - stage: Prod
     dependsOn: Build
-    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.SourceBranch'], 'refs/heads/main')))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
     variables:
       - group: amido-stacks-infra-credentials-prod
       - group: stacks-credentials-prod-kv
