@@ -14,33 +14,31 @@ namespace Htec.Poc.API.Controllers;
 /// </summary>
 [Produces("application/json")]
 [Consumes("application/json")]
-[ApiExplorerSettings(GroupName = "Wallet", IgnoreApi = true)]
+[ApiExplorerSettings(GroupName = "Wallet")]
 [ApiController]
-public class GetWalletByIdController : ApiControllerBase
+public class GetWalletByMemberIdController : ApiControllerBase
 {
-    readonly IQueryHandler<Query.GetWalletById, Query.Wallet> queryHandler;
+    readonly IQueryHandler<Query.GetWalletByMemberId, Query.Wallet> queryHandler;
 
-    public GetWalletByIdController(IQueryHandler<Query.GetWalletById, Query.Wallet> queryHandler)
+    public GetWalletByMemberIdController(IQueryHandler<Query.GetWalletByMemberId, Query.Wallet> queryHandler)
     {
         this.queryHandler = queryHandler ?? throw new ArgumentNullException(nameof(queryHandler));
     }
 
     /// <summary>
-    /// Get a wallet
+    /// Get a wallet by member id
     /// </summary>
-    /// <remarks>By passing the wallet id, you can get access to available categories and items in the wallet </remarks>
-    /// <param name="id">wallet id</param>
+    /// <remarks>By passing the member id, you can get access to the wallet. </remarks>
+    /// <param name="memberId">member id</param>
     /// <response code="200">Wallet</response>
     /// <response code="400">Bad Request</response>
     /// <response code="404">Resource not found</response>
-    [HttpGet("/v1/wallet/{id}")]
+    [HttpGet("/v1/members/{memberId}/wallet")]
     [Authorize]
     [ProducesResponseType(typeof(Wallet), 200)]
-    public async Task<IActionResult> GetWallet([FromRoute][Required]Guid id)
+    public async Task<IActionResult> GetWalletByMemberId([FromRoute][Required] Guid memberId)
     {
-        // NOTE: Please ensure the API returns the response codes annotated above
-
-        var result = await queryHandler.ExecuteAsync(new Query.GetWalletById() { Id = id });
+        var result = await queryHandler.ExecuteAsync(new Query.GetWalletByMemberId() { MemberId = memberId });
 
         if (result == null)
             return NotFound();

@@ -60,17 +60,7 @@ public class CosmosDbWalletRepositoryTests
         //Assert the values returned from DB matches the values sent
         Assert.Equal(dbItem.Id, wallet.Id);
         Assert.Equal(dbItem.Name, wallet.Name);
-        Assert.Equal(dbItem.TenantId, wallet.TenantId);
-        Assert.Equal(dbItem.Description, wallet.Description);
         Assert.Equal(dbItem.Enabled, wallet.Enabled);
-        Assert.All(wallet.Categories, c =>
-            dbItem.Categories.Any(d =>
-                c.Id == d.Id &&
-                c.Name == d.Name &&
-                c.Description == d.Description &&
-                c.Items == d.Items
-            )
-        );
     }
 
     /// <summary>

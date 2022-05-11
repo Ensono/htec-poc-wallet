@@ -17,7 +17,7 @@ public class UpdateWalletCommandHandler : WalletCommandHandlerBase<UpdateWallet,
 
     public override Task<bool> HandleCommandAsync(Wallet wallet, UpdateWallet command)
     {
-        wallet.Update(command.Name, command.Description, command.Enabled);
+        wallet.Update(command.Name, command.Enabled, command.Points);
 
         return Task.FromResult(true);
     }

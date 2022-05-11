@@ -36,6 +36,8 @@ public enum ExceptionCode
     WalletAlreadyExists = 10409,
     WalletDoesNotExist = 10404,
 
+    MemberDoesNotExistException = 10405,
+
     CategoryAlreadyExists = 11409,
     CategoryDoesNotExist = 11404,
 

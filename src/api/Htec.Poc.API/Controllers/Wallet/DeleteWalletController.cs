@@ -13,7 +13,7 @@ namespace Htec.Poc.API.Controllers;
 /// </summary>
 [Produces("application/json")]
 [Consumes("application/json")]
-[ApiExplorerSettings(GroupName = "Wallet")]
+[ApiExplorerSettings(GroupName = "Wallet", IgnoreApi = true)]
 [ApiController]
 public class DeleteWalletController : ApiControllerBase
 {

@@ -1,8 +1,13 @@
 ﻿using Amido.Stacks.Messaging.Azure.ServiceBus.Serializers;
-using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Htec.Poc.Application.CQRS.Events;
+using System;
+using Amido.Stacks.Application.CQRS.ApplicationEvents;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Text;
+using Azure.Messaging.ServiceBus;
 
 namespace Htec.Poc.Listener;
 
@@ -10,24 +15,28 @@ public class StacksListener
 {
     private readonly IMessageReader msgReader;
     private readonly ILogger<StacksListener> logger;
+    private readonly IApplicationEventHandler<RewardCalculatedEvent> applicationEventHandler;
 
-    public StacksListener(IMessageReader msgReader, ILogger<StacksListener> logger)
+    public StacksListener(
+        IMessageReader msgReader, 
+        ILogger<StacksListener> logger,
+        IApplicationEventHandler<RewardCalculatedEvent> applicationEventHandler)
     {
         this.msgReader = msgReader;
         this.logger = logger;
+        this.applicationEventHandler = applicationEventHandler ?? throw new ArgumentNullException(nameof(applicationEventHandler));
     }
 
     [FunctionName("StacksListener")]
-    public void Run([ServiceBusTrigger(
+    public async Task Run([ServiceBusTrigger(
         "%TOPIC_NAME%",
         "%SUBSCRIPTION_NAME%",
-        Connection = "SERVICEBUS_CONNECTIONSTRING")] Message mySbMsg)
+        Connection = "SERVICEBUS_CONNECTIONSTRING")] ServiceBusReceivedMessage message)
     {
-        var appEvent = msgReader.Read<StacksCloudEvent<WalletCreatedEvent>>(mySbMsg);
+        var applicationEvent = JsonConvert.DeserializeObject<StacksCloudEvent<RewardCalculatedEvent>>(Encoding.UTF8.GetString(message.Body));
 
-        // TODO: work with appEvent
-        logger.LogInformation($"Message read. Wallet Id: {appEvent?.Data?.WalletId}");
+        logger.LogInformation($"C# ServiceBus topic trigger function processed message: {applicationEvent}");
 
-        logger.LogInformation($"C# ServiceBus topic trigger function processed message: {appEvent}");
+        await applicationEventHandler.HandleAsync(applicationEvent?.Data);
     }
 }

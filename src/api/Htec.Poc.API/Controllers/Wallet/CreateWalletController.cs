@@ -15,7 +15,7 @@ namespace Htec.Poc.API.Controllers;
 /// </summary>
 [Consumes("application/json")]
 [Produces("application/json")]
-[ApiExplorerSettings(GroupName = "Wallet")]
+[ApiExplorerSettings(GroupName = "Wallet", IgnoreApi = true)]
 [ApiController]
 public class CreateWalletController : ApiControllerBase
 {
@@ -37,24 +37,24 @@ public class CreateWalletController : ApiControllerBase
     [HttpPost("/v1/wallet/")]
     [Authorize]
     [ProducesResponseType(typeof(ResourceCreatedResponse), 201)]
-    public async Task<IActionResult> CreateWallet([Required][FromBody]CreateWalletRequest body)
+    public async Task<IActionResult> CreateWallet([Required][FromBody] CreateWalletRequest body)
     {
         // NOTE: Please ensure the API returns the response codes annotated above
 
         var id = await commandHandler.HandleAsync(
             new CreateWallet(
                 correlationId: GetCorrelationId(),
-                tenantId: body.TenantId, //Should check if user logged-in owns it
                 name: body.Name,
-                description: body.Description,
-                enabled: body.Enabled
+                enabled: body.Enabled,
+                points: body.Points,
+                memberId: body.MemberId
             )
         );
 
         return new CreatedAtActionResult(
             "GetWallet", "GetWalletById", new
             {
-                id = id
+                id
             }, new ResourceCreatedResponse(id)
         );
     }

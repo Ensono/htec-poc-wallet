@@ -104,15 +104,6 @@ public abstract class ApiClientFixture : ApiFixture<Startup>
         return await SendAsync(HttpMethod.Post, "/v1/wallet", wallet);
     }
 
-    /// <summary>
-    /// Send a POST Http request to the API CreateCategory endpoint passing the wallet id and category being created
-    /// </summary>
-    /// <param name="category">Category being created</param>
-    public async Task<HttpResponseMessage> CreateCategory(Guid walletId, CreateCategoryRequest category)
-    {
-        return await SendAsync(HttpMethod.Post, $"/v1/wallet/{walletId}/category", category);
-    }
-
     internal void ThenASuccessfulResponseIsReturned()
     {
         LastResponse.IsSuccessStatusCode.ShouldBeTrue();

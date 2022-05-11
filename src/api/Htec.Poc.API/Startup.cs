@@ -197,8 +197,7 @@ public class Startup
                 c.DocumentFilter<SwaggerDocumentTagger>(
                     new OpenApiTag[]
                     {
-                        new OpenApiTag {Name = "Wallet"}, new OpenApiTag {Name = "Category"},
-                        new OpenApiTag {Name = "Item"}
+                        new OpenApiTag {Name = "Wallet"}
                     }, new string[] { });
 
                 //By Default, all endpoints are grouped by the controller name

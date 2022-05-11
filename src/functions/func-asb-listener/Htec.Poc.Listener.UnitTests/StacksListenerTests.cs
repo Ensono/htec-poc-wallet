@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 using NSubstitute;
 using Xunit;
 using Htec.Poc.Application.CQRS.Events;
+using Amido.Stacks.Application.CQRS.ApplicationEvents;
+using Azure.Messaging.ServiceBus;
 
 namespace Htec.Poc.Listener.UnitTests;
 
@@ -17,11 +19,13 @@ public class StacksListenerTests
 {
     private readonly IMessageReader msgReader;
     private readonly ILogger<StacksListener> logger;
+    private readonly IApplicationEventHandler<RewardCalculatedEvent> applicationEventHandler;
 
     public StacksListenerTests()
     {
         msgReader = Substitute.For<IMessageReader>();
         logger = Substitute.For<ILogger<StacksListener>>();
+        applicationEventHandler = Substitute.For<IApplicationEventHandler<RewardCalculatedEvent>>();
     }
 
     [Fact]
@@ -30,20 +34,26 @@ public class StacksListenerTests
         var msgBody = BuildMessageBody();
         var message = BuildMessage(msgBody);
 
-        var stacksListener = new StacksListener(msgReader, logger);
+        var payloadJson = System.Text.Json.JsonSerializer.Serialize(msgBody);
+        var serviceBusReceivedMessage = ServiceBusModelFactory.ServiceBusReceivedMessage(
+            body: BinaryData.FromString(payloadJson),
+            deliveryCount: 3);
 
-        stacksListener.Run(message);
+        var stacksListener = new StacksListener(msgReader, logger, applicationEventHandler);
 
-        msgReader.Received(1).Read<StacksCloudEvent<WalletCreatedEvent>>(message);
+        _ = stacksListener.Run(serviceBusReceivedMessage);
+
+        msgReader.Received(0).Read<StacksCloudEvent<RewardCalculatedEvent>>(message);
     }
 
-    public WalletCreatedEvent BuildMessageBody()
+    public RewardCalculatedEvent BuildMessageBody()
     {
-        var id = Guid.NewGuid();
-        return new WalletCreatedEvent(new TestOperationContext(), id);
+        var memberId = Guid.NewGuid();
+        var points = 99;
+        return new RewardCalculatedEvent(new TestOperationContext(), memberId, points);
     }
 
-    public Message BuildMessage(WalletCreatedEvent body)
+    public Message BuildMessage(RewardCalculatedEvent body)
     {
         Guid correlationId = GetCorrelationId(body);
 

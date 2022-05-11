@@ -39,10 +39,7 @@ public class SearchWalletQueryHandler : IQueryHandler<SearchWallet, SearchWallet
         bool restaurantIdProvided = criteria.TenantId.HasValue;
 
         var results = await storage.Search(
-            itemFilter =>
-                (string.IsNullOrEmpty(searchTerm) || itemFilter.Name.Contains(searchTerm)) &&
-                //Nullable types must have a value when passed to a seach, this is why we convert it to non nullable and pass a boolean check
-                (!restaurantIdProvided || itemFilter.TenantId == tenantId),
+            itemFilter => string.IsNullOrEmpty(searchTerm) || itemFilter.Name.Contains(searchTerm),
             null,
             pageSize,
             pageNumber);
@@ -57,9 +54,7 @@ public class SearchWalletQueryHandler : IQueryHandler<SearchWallet, SearchWallet
         result.Results = results.Content.Select(i => new SearchWalletResultItem()
         {
             Id = i.Id,
-            RestaurantId = i.TenantId,
             Name = i.Name,
-            Description = i.Description,
             Enabled = i.Enabled
         });
 

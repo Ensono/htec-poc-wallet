@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
@@ -63,29 +62,29 @@ public class WalletTests
     }
 
     [Fact]
-    public void Description_Should_ReturnString()
+    public void Points_Should_ReturnInteger()
     {
         // Arrange
         // Act
         // Assert
         typeof(Wallet)
             .Properties()
-            .First(x => x.Name == "Description")
+            .First(x => x.Name == "Points")
             .Should()
-            .Return<string>();
+            .Return<int>();
     }
 
     [Fact]
-    public void Categories_Should_ReturnList()
+    public void Points_Should_BeDecoratedWith_RequiredAttribute()
     {
         // Arrange
         // Act
         // Assert
         typeof(Wallet)
             .Properties()
-            .First(x => x.Name == "Categories")
+            .First(x => x.Name == "Points")
             .Should()
-            .Return<List<Category>>();
+            .BeDecoratedWith<RequiredAttribute>();
     }
 
     [Fact]

@@ -12,17 +12,21 @@ public class CreateWalletRequest
     [Required]
     public string Name { get; set; }
 
-    /// <example>Description of wallet created</example>
-    [Required]
-    public string Description { get; set; }
-
-    /// <example>d290f1ee-6c54-4b01-90e6-d701748f0851</example>
-    [Required]
-    public Guid TenantId { get; set; }
-
     /// <summary>
     /// Represents the status of the wallet. False if disabled
     /// </summary>
     [Required]
     public bool Enabled { get; set; }
+
+    /// <summary>
+    /// Represents the points balance the wallet.
+    /// </summary>
+    [Required]
+    public int Points { get; set; }
+
+    /// <summary>
+    /// Represents the member id.
+    /// </summary>
+    [Required]
+    public Guid MemberId { get; set; }
 }

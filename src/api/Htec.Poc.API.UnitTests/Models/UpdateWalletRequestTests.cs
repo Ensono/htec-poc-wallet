@@ -49,32 +49,6 @@ public class UpdateWalletRequestTests
     }
 
     [Fact]
-    public void TenantId_Should_BeDecoratedWith_RequiredAttribute()
-    {
-        // Arrange
-        // Act
-        // Assert
-        typeof(UpdateWalletRequest)
-            .Properties()
-            .First(x => x.Name == "RestaurantId")
-            .Should()
-            .BeDecoratedWith<RequiredAttribute>();
-    }
-
-    [Fact]
-    public void TenantId_Should_ReturnGuid()
-    {
-        // Arrange
-        // Act
-        // Assert
-        typeof(UpdateWalletRequest)
-            .Properties()
-            .First(x => x.Name == "RestaurantId")
-            .Should()
-            .Return<Guid>();
-    }
-
-    [Fact]
     public void Enabled_Should_BeDecoratedWith_RequiredAttribute()
     {
         // Arrange

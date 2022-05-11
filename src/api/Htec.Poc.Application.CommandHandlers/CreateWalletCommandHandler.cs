@@ -24,20 +24,12 @@ public class CreateWalletCommandHandler : ICommandHandler<CreateWallet, Guid>
     {
         var id = Guid.NewGuid();
 
-        // TODO: Check if the user owns the resource before any operation
-        // if(command.User.TenantId != wallet.TenantId)
-        // {
-        //     throw NotAuthorizedException()
-        // }
-
-
         var newWallet = new Wallet(
             id: id,
             name: command.Name,
-            tenantId: command.TenantId,
-            description: command.Description,
-            categories: null,
-            enabled: command.Enabled
+            enabled: command.Enabled,
+            points: command.Points,
+            memberId: command.MemberId
         );
 
         await repository.SaveAsync(newWallet);

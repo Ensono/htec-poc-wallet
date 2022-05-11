@@ -10,6 +10,6 @@
     <ProjectReference Include="..\Htec.Poc.Domain\Htec.Poc.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.2.49" />
+    <PackageReference Include="Amido.Stacks.Messaging.Azure.ServiceBus" Version="0.3.11" />
   </ItemGroup>
 </Project>

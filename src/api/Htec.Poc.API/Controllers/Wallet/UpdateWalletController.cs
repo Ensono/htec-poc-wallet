@@ -14,7 +14,7 @@ namespace Htec.Poc.API.Controllers;
 /// </summary>
 [Produces("application/json")]
 [Consumes("application/json")]
-[ApiExplorerSettings(GroupName = "Wallet")]
+[ApiExplorerSettings(GroupName = "Wallet", IgnoreApi = true)]
 [ApiController]
 public class UpdateWalletController : ApiControllerBase
 {
@@ -46,8 +46,8 @@ public class UpdateWalletController : ApiControllerBase
             {
                 WalletId = id,
                 Name = body.Name,
-                Description = body.Description,
-                Enabled = body.Enabled
+                Enabled = body.Enabled,
+                Points = body.Points
             });
 
         return StatusCode(204);
