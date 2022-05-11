@@ -16,7 +16,7 @@ variables:
   - name: tf_state_container
     value: tfstate
   - name: tf_state_key
-    value: $(self-generic-name)
+    value: $(self_generic_name)
 
   # TF File location in Repo
   - name: TF_FILE_LOCATION
@@ -25,6 +25,8 @@ variables:
   # Agent configuration
   - name: TaskctlVersion
     value: 1.4.2
+  - name: StacksEnvfileVersion
+    value: 0.0.16    
   - name: pool_vm_image
     value: ubuntu-20.04
 
@@ -42,7 +44,9 @@ variables:
 
   # App Specific Taxonomy
   - name: resource_def_name
-    value: $(self-generic-name)
+    value: $(self_generic_name)
+  - name: resource_def_worker_name
+    value: $(resource_def_name)-bg-worker
   - name: component
     value: api
   - name: role
@@ -52,13 +56,15 @@ variables:
   - name: self_generic_name
     value: $(company)-$(domain)
   - name: app_name
-    value:  $(self-generic-name)
+    value: $(self_generic_name)
+  - name: app_worker_name
+    value: api
   - name: region
     value: westeurope
   - name: company
     value: htec
   - name: project
-    value: htec-poc-wallet
+    value: exxon-poc-wallet
   - name: domain
     value: wallet
   - name: k8s_app_route
@@ -79,10 +85,10 @@ variables:
     value: "$(self_generic_name)-listener-asb-function"
   - name: docker_image_args_asb_listener
     value: "--build-arg function=Htec.Poc.Listener src/functions/func-asb-listener"
-  - name: docker_image_name_aeh_listener
-    value: "$(self_generic_name)--listener-aeh-function"
-  - name: docker_image_args_aeh_listener
-    value: "--build-arg function=Htec.Poc.Listener src/functions/func-aeh-listener"
+  - name: docker_image_name_cosmosdb_worker
+    value: "$(self_generic_name)-listener-aeh-function"
+  - name: docker_image_args_cosmosdb_worker
+    value: "--build-arg function=Htec.Poc.Worker src/functions/func-cosmosdb-worker"
 
   # SonarQube Configuration
   # SONAR_TOKEN and SONAR_ORGANIZATION must be inherited from library groups/etc.
@@ -109,9 +115,9 @@ variables:
   - name: docker_container_registry_name_nonprod
     value: htecexxonnonprodeuwcore
   - name: docker_container_registry_rg_name_prod
-    value:
+    value: htec-exxon-prod-euw-core
   - name: docker_container_registry_name_prod
-    value:
+    value: htecexxonprodeuwcore
 
   # Kubernetes & Docker Image Settings
   - name: docker_image_tag
@@ -126,9 +132,9 @@ variables:
   - name: k8s_cluster_identifier_nonprod
     value: htec-exxon-nonprod-euw-core
   - name: k8s_cluster_target_prod
-    value:
+    value: htec-exxon-prod-euw-core
   - name: k8s_cluster_identifier_prod
-    value:
+    value: htec-exxon-prod-euw-core
 
   # Kubernetes target file location
   - name: k8s_resource_file

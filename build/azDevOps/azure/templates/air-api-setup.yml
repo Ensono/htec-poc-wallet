@@ -1,9 +1,11 @@
 parameters:
   TaskctlVersion: 1.4.2
+  StacksEnvfileVersion: 0.0.13
 
 steps:
   # Checkout self repo
   - checkout: self
+
   # Install Taskfile so that the tests can be run
   - task: Bash@3
     displayName: "Install: Taskctl"
@@ -12,3 +14,12 @@ steps:
       script: |
         wget https://github.com/taskctl/taskctl/releases/download/${{ parameters.TaskctlVersion }}/taskctl_${{ parameters.TaskctlVersion }}_linux_amd64.tar.gz -O /tmp/taskctl.tar.gz
         tar zxf /tmp/taskctl.tar.gz -C /usr/local/bin taskctl
+
+  # Install the stacks envfile so the Docker environment file is created properly
+  - task: Bash@3
+    displayName: Install Envfile
+    inputs:
+      targetType: inline
+      script: |
+        wget https://github.com/amido/stacks-envfile/releases/download/v${{ parameters.StacksEnvfileVersion }}/stacks-envfile-linux-amd64-${{ parameters.StacksEnvfileVersion }} -O /usr/local/bin/envfile
+        chmod +x /usr/local/bin/envfile

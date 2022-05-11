@@ -49,6 +49,10 @@ module "servicebus" {
   cosmosdb_database_name     = module.app.cosmosdb_database_name
   cosmosdb_collection_name   = var.cosmosdb_sql_container
   cosmosdb_connection_string = "AccountEndpoint=${module.app.cosmosdb_endpoint};AccountKey=${module.app.cosmosdb_primary_master_key};"
+
+  depends_on = [
+    module.app
+  ]
 }
 
 module "eventhub" {
@@ -56,4 +60,8 @@ module "eventhub" {
   source                  = "../eventhub"
   resource_group_name     = module.default_label.id
   resource_group_location = var.resource_group_location
+
+  depends_on = [
+    module.app
+  ]  
 }
