@@ -253,6 +253,13 @@ stages:
                     path: $(Agent.BuildDirectory)/s/$(k8s_resource_file)
                     artifact: manifests_dev
 
+                # Get the outputs from Terraform and set them as variables
+                - task: PowerShell@2
+                  displayName: Set TFOutputs as variables
+                  inputs:
+                    targetType: filepath
+                    filePath: $(Build.SourcesDirectory)/build/azDevOps/azure/scripts/Set-Vars.ps1
+
                 # TODO: This functionality in general should be run via AIR, but there are limitations in CLI tooling.
                 - template: templates/legacy-deploy-functions.yml
                   parameters:
