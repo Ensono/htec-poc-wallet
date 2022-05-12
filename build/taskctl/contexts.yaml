@@ -61,7 +61,7 @@ contexts:
         - /app
         - --env-file
         - envfile
-        - amidostacks/runner-pwsh-dotnet:0.3.121-main
+        - russellseymour/runner-pwsh-dotnet:rjs-1
         - pwsh
         - -NoProfile
         - -Command
