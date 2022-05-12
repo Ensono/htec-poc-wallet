@@ -115,7 +115,7 @@ tasks:
     context: powershell-dotnet
     description: Create container image for application
     command:
-      - Write-Host Build-DockerImage -Name {{ .imagename }} -buildargs {{ .buildargs }} -push
+      - Write-Host Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -push
       - Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -push
     variables:
       buildargs: src/api # Parameterised for multiple docker builds in the same repo
