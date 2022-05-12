@@ -115,7 +115,7 @@ tasks:
     context: powershell-dotnet
     description: Create container image for application
     command:
-      - dir env:/
+      - Get-Location
       - Write-Host Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -Provider azure -push
       - $DebugPreference = "Continue"; Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -Provider azure -push
     variables:
