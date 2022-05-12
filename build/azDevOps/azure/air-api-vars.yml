@@ -84,7 +84,7 @@ variables:
   - name: docker_image_name_asb_listener
     value: "$(self_generic_name)-listener-asb-function"
   - name: docker_image_args_asb_listener
-    value: "function=Htec.Poc.Listener src/functions/func-asb-listener"
+    value: "--build-arg function=Htec.Poc.Listener src/functions/func-asb-listener"
   - name: docker_image_name_cosmosdb_worker
     value: "$(self_generic_name)-listener-aeh-function"
   - name: docker_image_args_cosmosdb_worker
