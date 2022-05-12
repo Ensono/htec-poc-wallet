@@ -264,28 +264,6 @@ stages:
                     function_name: func-asb-listener-byvduw # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
                     function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
 
-                - template: templates/legacy-deploy-functions.yml
-                  parameters:
-                    condition: contains('${{ variables.app_bus_type }}', 'eventhub')
-                    azureSubscription: ${{ variables.azure_service_connection}}
-                    container_registry_name: $(docker_container_registry_name_nonprod)
-                    function_image_name: $(docker_image_name_cosmosdb_worker)
-                    function_image_tag: $(docker_image_tag)
-                    function_name: func-aeh-listener-cxavcl # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-
-                - template: templates/legacy-deploy-functions.yml
-                  parameters:
-                    azureSubscription: ${{ variables.azure_service_connection}}
-                    container_registry_name: $(docker_container_registry_name_nonprod)
-                    function_image_name: $(docker_image_name_worker)
-                    function_image_tag: $(docker_image_tag)
-                    function_name: function-publisher-byvduw # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: htec-exxon-poc-wallet-dev-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-
-
-
-
   - stage: Prod
     dependsOn: Build
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
@@ -443,23 +421,4 @@ stages:
                     function_image_name: $(docker_image_name_asb_listener)
                     function_image_tag: $(docker_image_tag)
                     function_name: func-asb-listener-byvduw # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: htec-exxon-poc-wallet-prod-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-
-                - template: templates/legacy-deploy-functions.yml
-                  parameters:
-                    condition: contains('${{ variables.app_bus_type }}', 'eventhub')
-                    azureSubscription: ${{ variables.azure_service_connection}}
-                    container_registry_name: $(docker_container_registry_name_nonprod)
-                    function_image_name: $(docker_image_name_cosmosdb_worker)
-                    function_image_tag: $(docker_image_tag)
-                    function_name: func-aeh-listener-cxavcl # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-                    function_resource_group: htec-exxon-poc-wallet-prod-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
-
-                - template: templates/legacy-deploy-functions.yml
-                  parameters:
-                    azureSubscription: ${{ variables.azure_service_connection}}
-                    container_registry_name: $(docker_container_registry_name_nonprod)
-                    function_image_name: $(docker_image_name_worker)
-                    function_image_tag: $(docker_image_tag)
-                    function_name: function-publisher-byvduw # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
                     function_resource_group: htec-exxon-poc-wallet-prod-euw-wallet # TODO: This name is constructed in TF but we currently have no way of reading the output into the pipeline
