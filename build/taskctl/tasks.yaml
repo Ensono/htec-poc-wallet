@@ -204,3 +204,9 @@ tasks:
     context: powershell
     command:
       - Write-Host "***** DEBUG *****" && get-childitem -filter "*opencover.xml" -recurse
+
+  infra:outputs:
+    context: powershell
+    description: Set pipeline variables
+    command:
+      /app/build/azDevOps/azure/scripts/Set-Vars.ps1
