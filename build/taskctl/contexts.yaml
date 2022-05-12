@@ -61,7 +61,7 @@ contexts:
         - /app
         - --env-file
         - envfile
-        - russellseymour/runner-pwsh-dotnet:rjs-1
+        - russellseymour/runner-pwsh-dotnet:rjs-2
         - pwsh
         - -NoProfile
         - -Command
