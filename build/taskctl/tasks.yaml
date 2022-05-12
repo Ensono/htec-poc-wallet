@@ -119,7 +119,7 @@ tasks:
       - Write-Host Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -Provider azure -push
       - $DebugPreference = "Continue"; Build-DockerImage -Name {{ .imagename }} -buildargs `"{{ .buildargs }}`" -Provider azure -push
     variables:
-      buildargs: src/api # Parameterised for multiple docker builds in the same repo
+      buildargs: src/api    # Parameterised for multiple docker builds in the same repo
       imagename: $env:DOCKER_IMAGE_NAME  # Parameterised for multiple docker builds in the same repo
 
   build:functional_tests:

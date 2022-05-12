@@ -34,7 +34,7 @@ pipelines:
         - imagename: $env:DOCKER_IMAGE_NAME
 
   build:container:bg_worker:
-    - task: build:container    
+    - task: build:container
       variables:
         - buildargs: $env:DOCKER_IMAGE_ARGS_BG_WORKER
         - imagename: $env:DOCKER_IMAGE_NAME_BG_WORKER
@@ -43,7 +43,7 @@ pipelines:
     - task: build:container
       variables:
         - buildargs: $env:DOCKER_IMAGE_ARGS_WORKER
-        - imagename: $env:DOCKER_IMAGE_NAME_WORKER  
+        - imagename: $env:DOCKER_IMAGE_NAME_WORKER
 
   build:container:listener_asb:
     - task: build:container
@@ -53,7 +53,7 @@ pipelines:
 
   build:container:cosmosdb_worker:
     - task: build:container
-      name: 
+      name:
       variables:
         - buildargs: $env:DOCKER_IMAGE_ARGS_COSMOSDB_WORKER
         - imagename: $env:DOCKER_IMAGE_NAME_COSMOSDB_WORKER
@@ -87,13 +87,13 @@ pipelines:
         - imagename: $env:DOCKER_IMAGE_NAME_ASB_LISTENER
       depends_on:
         - build:container:worker
-    # - task: build:container
-    #   name: build:container:listener_aeh
-    #   variables:
-    #     - buildargs: $env:DOCKER_IMAGE_ARGS_AEH_LISTENER
-    #     - imagename: $env:DOCKER_IMAGE_NAME_AEH_LISTENER
-    #   depends_on:
-    #     - build:container:listener_asb
+      # - task: build:container
+      #   name: build:container:listener_aeh
+      #   variables:
+      #     - buildargs: $env:DOCKER_IMAGE_ARGS_AEH_LISTENER
+      #     - imagename: $env:DOCKER_IMAGE_NAME_AEH_LISTENER
+      #   depends_on:
+      #     - build:container:listener_asb
 
   # Pipeline to ensure that the infrastructure is valid
   infrastructure:

@@ -8,13 +8,14 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 as build
 
 ARG function
+ARG functionPath
 ARG outdir=out
 
 WORKDIR /app
 
 # Copy the worker project and build
-COPY ../../../../src ./
-RUN dotnet publish -c Release -o ${outdir} ${function}
+COPY src/ src/
+RUN cd ${functionPath} && dotnet publish -c Release -o ${outdir} ${function}
 
 # Build the runtime image
 FROM mcr.microsoft.com/azure-functions/dotnet:4 as runtime

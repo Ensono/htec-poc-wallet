@@ -63,5 +63,5 @@ module "eventhub" {
 
   depends_on = [
     module.app
-  ]  
+  ]
 }
