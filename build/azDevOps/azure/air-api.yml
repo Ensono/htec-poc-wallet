@@ -6,7 +6,7 @@ pr:
 trigger:
   branches:
     include:
-      - 'master'
+      - '*'
   paths:
     include:
       - '*'
@@ -269,7 +269,7 @@ stages:
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
     variables:
       - group: amido-stacks-infra-credentials-prod
-      - group: stacks-credentials-prod-kv
+
       - name: Environment.ShortName
         value: prod
       - name: dns_base_domain  # Available in Terraform Output, but not yet enabled to export as pipeline vars
